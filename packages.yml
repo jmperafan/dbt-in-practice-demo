@@ -5,3 +5,5 @@ packages:
   # DuckDB, which is why this wasn't here before the Snowflake move.
   - package: dbt-labs/dbt_context_engineering
     version: 0.2.0
+  - package: dbt-labs/codegen
+    version: [">=0.12.0", "<1.0.0"]
