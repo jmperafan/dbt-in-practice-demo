@@ -1,0 +1,52 @@
+name: 'topspin_tennis_academy'
+profile: 'topspin_tennis_academy'
+version: '1.0.0'
+
+# This project targets dbt v2 (the Fusion engine, GA since 2026-09-16). It
+# relies on v2-only features later in the course (project Checks, the dbt
+# Information Schema), so the floor below is a hard requirement, not a
+# polite preference. See docs/01-setup.md for why v2 over v1.
+require-dbt-version: ">=2.0.0,<3.0.0"
+
+# Binds this repo to a project on the dbt platform, the same dual-binding
+# ztc-core uses: the Fusion engine binary still resolves credentials from
+# profiles.yml for day-to-day runs (see profiles.yml's own header), but this
+# block is what the dbt platform CLI, dbt Jobs, Wizard-on-platform, and
+# Mesh/Catalog all key off instead. Replace with your own project's ID —
+# this one is a placeholder until the sandbox described in docs/01-setup.md
+# exists.
+# dbt-cloud:
+#   project-id: REPLACE_ME
+
+model-paths: ["models"]
+test-paths: ["tests"]
+check-paths: ["checks"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  topspin_tennis_academy:
+    # staging: private — the layer every downstream model is built from, not
+    # something another project (or a BI tool) should ever reference directly.
+    staging:
+      +materialized: view
+      +schema: staging
+      +tags: ["staging"]
+
+    # intermediate: private — shared join/business logic, implementation
+    # detail. Ephemeral because nothing outside this project ever queries it.
+    intermediate:
+      +materialized: ephemeral
+      +schema: intermediate
+      +tags: ["intermediate"]
+
+    # marts: the consumption-ready layer. Built out starting in Lesson 4.
+    marts:
+      +materialized: table
+      +schema: marts
+      +tags: ["marts"]
