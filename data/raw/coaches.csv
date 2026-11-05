@@ -1,0 +1,9 @@
+coach_id,first_name,last_name,email,phone,hire_date,specialty,certification_level,hourly_rate,is_active,loaded_at
+COACH-01,Liam,Foster,liam.foster1@example.com,555-771-4728,2022-10-11,Junior development,Certified,45.0,True,2022-10-11 09:00:00
+COACH-02,Mia,Alexander,mia.alexander2@example.com,555-251-4968,2021-06-28,Competitive,Master,45.0,True,2021-06-28 09:00:00
+COACH-03,Mason,Kelly,mason.kelly3@example.com,555-551-6139,2025-07-17,Adult beginner,Certified,80.0,True,2025-07-17 09:00:00
+COACH-04,Jack,Flores,jack.flores4@example.com,555-893-8726,2020-02-16,Cardio tennis,Professional,45.0,True,2020-02-16 09:00:00
+COACH-05,Ben,Price,ben.price5@example.com,555-778-8837,2022-02-09,Competitive,Elite,95.0,True,2022-02-09 09:00:00
+COACH-06,Lucas,Simmons,lucas.simmons6@example.com,555-659-6804,2021-11-30,Junior development,Professional,65.0,True,2021-11-30 09:00:00
+COACH-07,Amelia,Wood,amelia.wood7@example.com,555-671-5890,2022-08-17,Adult beginner,Certified,55.0,True,2022-08-17 09:00:00
+COACH-08,Henry,Henderson,henry.henderson8@example.com,555-806-9011,2023-06-06,Doubles strategy,Master,65.0,True,2023-06-06 09:00:00
