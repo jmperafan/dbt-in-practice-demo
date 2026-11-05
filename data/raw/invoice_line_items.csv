@@ -1,0 +1,800 @@
+line_item_id,invoice_id,category,description,quantity,unit_amount,line_amount,loaded_at
+LI-00001,INV-00001,Court Fee,Court Fee charge,2,23.94,47.88,2026-04-22 06:00:00
+LI-00002,INV-00001,Tournament Entry,Tournament Entry charge,1,18.48,18.48,2026-04-22 06:00:00
+LI-00003,INV-00001,Lesson,Lesson charge,1,52.88,52.88,2026-04-22 06:00:00
+LI-00004,INV-00002,Court Fee,Court Fee charge,2,20.0,40.0,2026-05-27 06:00:00
+LI-00005,INV-00003,Court Fee,Court Fee charge,2,13.45,26.9,2026-05-19 06:00:00
+LI-00006,INV-00004,Tournament Entry,Tournament Entry charge,1,26.85,26.85,2026-09-03 06:00:00
+LI-00007,INV-00004,Court Fee,Court Fee charge,2,22.07,44.14,2026-09-03 06:00:00
+LI-00008,INV-00004,Lesson,Lesson charge,1,58.08,58.08,2026-09-03 06:00:00
+LI-00009,INV-00005,Tournament Entry,Tournament Entry charge,1,20.41,20.41,2026-10-30 06:00:00
+LI-00010,INV-00005,Lesson,Lesson charge,1,45.06,45.06,2026-10-30 06:00:00
+LI-00011,INV-00005,Court Fee,Court Fee charge,2,18.96,37.92,2026-10-30 06:00:00
+LI-00012,INV-00006,Lesson,Lesson charge,1,88.41,88.41,2026-04-09 06:00:00
+LI-00013,INV-00006,Court Fee,Court Fee charge,2,14.27,28.54,2026-04-09 06:00:00
+LI-00014,INV-00007,Membership,Membership charge,1,89.9,89.9,2026-06-24 06:00:00
+LI-00015,INV-00007,Lesson,Lesson charge,1,67.3,67.3,2026-06-24 06:00:00
+LI-00016,INV-00007,Tournament Entry,Tournament Entry charge,1,16.66,16.66,2026-06-24 06:00:00
+LI-00017,INV-00008,Membership,Membership charge,1,49.55,49.55,2026-02-25 06:00:00
+LI-00018,INV-00009,Membership,Membership charge,1,54.15,54.15,2026-03-26 06:00:00
+LI-00019,INV-00009,Lesson,Lesson charge,1,45.95,45.95,2026-03-26 06:00:00
+LI-00020,INV-00010,Court Fee,Court Fee charge,2,19.94,39.88,2026-08-30 06:00:00
+LI-00021,INV-00010,Lesson,Lesson charge,1,49.21,49.21,2026-08-30 06:00:00
+LI-00022,INV-00011,Lesson,Lesson charge,1,54.86,54.86,2026-01-27 06:00:00
+LI-00023,INV-00012,Lesson,Lesson charge,1,41.01,41.01,2025-12-17 06:00:00
+LI-00024,INV-00012,Membership,Membership charge,1,106.17,106.17,2025-12-17 06:00:00
+LI-00025,INV-00012,Tournament Entry,Tournament Entry charge,1,29.87,29.87,2025-12-17 06:00:00
+LI-00026,INV-00013,Court Fee,Court Fee charge,2,15.13,30.26,2026-09-23 06:00:00
+LI-00027,INV-00013,Tournament Entry,Tournament Entry charge,1,27.78,27.78,2026-09-23 06:00:00
+LI-00028,INV-00014,Tournament Entry,Tournament Entry charge,1,26.45,26.45,2026-06-29 06:00:00
+LI-00029,INV-00015,Membership,Membership charge,1,98.62,98.62,2026-10-19 06:00:00
+LI-00030,INV-00016,Membership,Membership charge,1,118.92,118.92,2025-11-04 06:00:00
+LI-00031,INV-00016,Tournament Entry,Tournament Entry charge,1,24.29,24.29,2025-11-04 06:00:00
+LI-00032,INV-00016,Court Fee,Court Fee charge,2,14.97,29.94,2025-11-04 06:00:00
+LI-00033,INV-00017,Lesson,Lesson charge,1,36.72,36.72,2026-10-16 06:00:00
+LI-00034,INV-00018,Membership,Membership charge,1,119.02,119.02,2026-07-18 06:00:00
+LI-00035,INV-00018,Lesson,Lesson charge,1,69.35,69.35,2026-07-18 06:00:00
+LI-00036,INV-00019,Court Fee,Court Fee charge,2,17.24,34.48,2026-04-10 06:00:00
+LI-00037,INV-00019,Lesson,Lesson charge,1,36.83,36.83,2026-04-10 06:00:00
+LI-00038,INV-00019,Tournament Entry,Tournament Entry charge,1,20.47,20.47,2026-04-10 06:00:00
+LI-00039,INV-00020,Lesson,Lesson charge,1,43.68,43.68,2026-08-10 06:00:00
+LI-00040,INV-00020,Membership,Membership charge,1,43.04,43.04,2026-08-10 06:00:00
+LI-00041,INV-00021,Membership,Membership charge,1,75.83,75.83,2026-07-16 06:00:00
+LI-00042,INV-00021,Tournament Entry,Tournament Entry charge,1,18.73,18.73,2026-07-16 06:00:00
+LI-00043,INV-00021,Court Fee,Court Fee charge,2,15.49,30.98,2026-07-16 06:00:00
+LI-00044,INV-00022,Membership,Membership charge,1,40.28,40.28,2026-03-01 06:00:00
+LI-00045,INV-00023,Lesson,Lesson charge,1,78.72,78.72,2026-06-14 06:00:00
+LI-00046,INV-00023,Court Fee,Court Fee charge,2,12.83,25.66,2026-06-14 06:00:00
+LI-00047,INV-00024,Membership,Membership charge,1,110.05,110.05,2026-05-11 06:00:00
+LI-00048,INV-00025,Court Fee,Court Fee charge,2,14.24,28.48,2026-06-05 06:00:00
+LI-00049,INV-00025,Tournament Entry,Tournament Entry charge,1,22.37,22.37,2026-06-05 06:00:00
+LI-00050,INV-00026,Membership,Membership charge,1,70.88,70.88,2026-09-26 06:00:00
+LI-00051,INV-00026,Tournament Entry,Tournament Entry charge,1,22.67,22.67,2026-09-26 06:00:00
+LI-00052,INV-00027,Court Fee,Court Fee charge,2,17.97,35.94,2026-10-15 06:00:00
+LI-00053,INV-00027,Membership,Membership charge,1,84.13,84.13,2026-10-15 06:00:00
+LI-00054,INV-00028,Tournament Entry,Tournament Entry charge,1,16.85,16.85,2026-08-07 06:00:00
+LI-00055,INV-00028,Lesson,Lesson charge,1,43.63,43.63,2026-08-07 06:00:00
+LI-00056,INV-00029,Court Fee,Court Fee charge,2,16.76,33.52,2026-06-02 06:00:00
+LI-00057,INV-00029,Lesson,Lesson charge,1,81.22,81.22,2026-06-02 06:00:00
+LI-00058,INV-00030,Tournament Entry,Tournament Entry charge,1,15.23,15.23,2025-12-16 06:00:00
+LI-00059,INV-00030,Court Fee,Court Fee charge,2,24.46,48.92,2025-12-16 06:00:00
+LI-00060,INV-00030,Lesson,Lesson charge,1,36.12,36.12,2025-12-16 06:00:00
+LI-00061,INV-00031,Tournament Entry,Tournament Entry charge,1,24.9,24.9,2025-11-26 06:00:00
+LI-00062,INV-00032,Membership,Membership charge,1,65.99,65.99,2026-09-24 06:00:00
+LI-00063,INV-00032,Tournament Entry,Tournament Entry charge,1,27.7,27.7,2026-09-24 06:00:00
+LI-00064,INV-00033,Tournament Entry,Tournament Entry charge,1,23.4,23.4,2026-04-21 06:00:00
+LI-00065,INV-00034,Membership,Membership charge,1,111.5,111.5,2026-02-03 06:00:00
+LI-00066,INV-00035,Lesson,Lesson charge,1,72.81,72.81,2026-02-25 06:00:00
+LI-00067,INV-00035,Tournament Entry,Tournament Entry charge,1,27.14,27.14,2026-02-25 06:00:00
+LI-00068,INV-00036,Lesson,Lesson charge,1,53.01,53.01,2026-01-05 06:00:00
+LI-00069,INV-00037,Court Fee,Court Fee charge,2,17.32,34.64,2026-08-09 06:00:00
+LI-00070,INV-00038,Tournament Entry,Tournament Entry charge,1,26.44,26.44,2026-05-16 06:00:00
+LI-00071,INV-00039,Membership,Membership charge,1,47.64,47.64,2025-11-28 06:00:00
+LI-00072,INV-00039,Court Fee,Court Fee charge,2,18.11,36.22,2025-11-28 06:00:00
+LI-00073,INV-00040,Lesson,Lesson charge,1,74.88,74.88,2026-08-10 06:00:00
+LI-00074,INV-00041,Court Fee,Court Fee charge,2,11.52,23.04,2026-06-21 06:00:00
+LI-00075,INV-00041,Tournament Entry,Tournament Entry charge,1,17.85,17.85,2026-06-21 06:00:00
+LI-00076,INV-00041,Membership,Membership charge,1,51.72,51.72,2026-06-21 06:00:00
+LI-00077,INV-00042,Lesson,Lesson charge,1,70.81,70.81,2026-06-10 06:00:00
+LI-00078,INV-00043,Court Fee,Court Fee charge,2,16.22,32.44,2025-12-05 06:00:00
+LI-00079,INV-00044,Lesson,Lesson charge,1,87.04,87.04,2026-08-17 06:00:00
+LI-00080,INV-00045,Tournament Entry,Tournament Entry charge,1,21.12,21.12,2026-06-30 06:00:00
+LI-00081,INV-00045,Lesson,Lesson charge,1,74.37,74.37,2026-06-30 06:00:00
+LI-00082,INV-00045,Court Fee,Court Fee charge,2,16.14,32.28,2026-06-30 06:00:00
+LI-00083,INV-00046,Membership,Membership charge,1,108.17,108.17,2026-03-18 06:00:00
+LI-00084,INV-00046,Lesson,Lesson charge,1,83.3,83.3,2026-03-18 06:00:00
+LI-00085,INV-00047,Membership,Membership charge,1,87.55,87.55,2026-05-11 06:00:00
+LI-00086,INV-00047,Tournament Entry,Tournament Entry charge,1,18.79,18.79,2026-05-11 06:00:00
+LI-00087,INV-00047,Lesson,Lesson charge,1,49.12,49.12,2026-05-11 06:00:00
+LI-00088,INV-00048,Lesson,Lesson charge,1,82.17,82.17,2026-09-08 06:00:00
+LI-00089,INV-00048,Court Fee,Court Fee charge,2,17.53,35.06,2026-09-08 06:00:00
+LI-00090,INV-00048,Tournament Entry,Tournament Entry charge,1,18.76,18.76,2026-09-08 06:00:00
+LI-00091,INV-00049,Membership,Membership charge,1,78.43,78.43,2025-12-02 06:00:00
+LI-00092,INV-00050,Court Fee,Court Fee charge,2,18.34,36.68,2025-12-29 06:00:00
+LI-00093,INV-00051,Membership,Membership charge,1,80.85,80.85,2025-12-09 06:00:00
+LI-00094,INV-00052,Tournament Entry,Tournament Entry charge,1,22.92,22.92,2026-10-31 06:00:00
+LI-00095,INV-00053,Lesson,Lesson charge,1,78.31,78.31,2025-12-27 06:00:00
+LI-00096,INV-00053,Tournament Entry,Tournament Entry charge,1,18.83,18.83,2025-12-27 06:00:00
+LI-00097,INV-00054,Lesson,Lesson charge,1,39.17,39.17,2026-10-11 06:00:00
+LI-00098,INV-00055,Tournament Entry,Tournament Entry charge,1,20.3,20.3,2025-11-04 06:00:00
+LI-00099,INV-00056,Tournament Entry,Tournament Entry charge,1,25.21,25.21,2026-09-24 06:00:00
+LI-00100,INV-00056,Membership,Membership charge,1,109.32,109.32,2026-09-24 06:00:00
+LI-00101,INV-00057,Tournament Entry,Tournament Entry charge,1,26.17,26.17,2025-11-04 06:00:00
+LI-00102,INV-00057,Court Fee,Court Fee charge,2,11.6,23.2,2025-11-04 06:00:00
+LI-00103,INV-00058,Tournament Entry,Tournament Entry charge,1,29.47,29.47,2026-06-23 06:00:00
+LI-00104,INV-00058,Lesson,Lesson charge,1,72.67,72.67,2026-06-23 06:00:00
+LI-00105,INV-00059,Membership,Membership charge,1,97.69,97.69,2026-03-23 06:00:00
+LI-00106,INV-00060,Membership,Membership charge,1,58.95,58.95,2026-02-11 06:00:00
+LI-00107,INV-00061,Court Fee,Court Fee charge,2,24.76,49.52,2026-06-20 06:00:00
+LI-00108,INV-00061,Tournament Entry,Tournament Entry charge,1,19.78,19.78,2026-06-20 06:00:00
+LI-00109,INV-00062,Membership,Membership charge,1,63.65,63.65,2026-02-21 06:00:00
+LI-00110,INV-00062,Lesson,Lesson charge,1,50.07,50.07,2026-02-21 06:00:00
+LI-00111,INV-00063,Court Fee,Court Fee charge,2,18.81,37.62,2025-11-11 06:00:00
+LI-00112,INV-00063,Membership,Membership charge,1,101.81,101.81,2025-11-11 06:00:00
+LI-00113,INV-00064,Membership,Membership charge,1,100.52,100.52,2026-08-02 06:00:00
+LI-00114,INV-00065,Lesson,Lesson charge,1,71.64,71.64,2025-11-25 06:00:00
+LI-00115,INV-00066,Membership,Membership charge,1,51.53,51.53,2026-05-06 06:00:00
+LI-00116,INV-00066,Court Fee,Court Fee charge,2,13.35,26.7,2026-05-06 06:00:00
+LI-00117,INV-00067,Court Fee,Court Fee charge,2,22.6,45.2,2026-06-28 06:00:00
+LI-00118,INV-00067,Membership,Membership charge,1,111.05,111.05,2026-06-28 06:00:00
+LI-00119,INV-00068,Tournament Entry,Tournament Entry charge,1,18.22,18.22,2026-05-20 06:00:00
+LI-00120,INV-00069,Membership,Membership charge,1,72.24,72.24,2026-01-05 06:00:00
+LI-00121,INV-00070,Court Fee,Court Fee charge,2,13.98,27.96,2026-06-12 06:00:00
+LI-00122,INV-00070,Tournament Entry,Tournament Entry charge,1,22.85,22.85,2026-06-12 06:00:00
+LI-00123,INV-00070,Membership,Membership charge,1,109.53,109.53,2026-06-12 06:00:00
+LI-00124,INV-00071,Lesson,Lesson charge,1,80.31,80.31,2026-03-16 06:00:00
+LI-00125,INV-00071,Court Fee,Court Fee charge,2,19.46,38.92,2026-03-16 06:00:00
+LI-00126,INV-00072,Court Fee,Court Fee charge,2,19.35,38.7,2026-10-05 06:00:00
+LI-00127,INV-00072,Membership,Membership charge,1,93.7,93.7,2026-10-05 06:00:00
+LI-00128,INV-00072,Lesson,Lesson charge,1,79.7,79.7,2026-10-05 06:00:00
+LI-00129,INV-00073,Lesson,Lesson charge,1,51.48,51.48,2026-02-05 06:00:00
+LI-00130,INV-00073,Membership,Membership charge,1,95.29,95.29,2026-02-05 06:00:00
+LI-00131,INV-00074,Tournament Entry,Tournament Entry charge,1,18.87,18.87,2026-06-02 06:00:00
+LI-00132,INV-00074,Membership,Membership charge,1,108.52,108.52,2026-06-02 06:00:00
+LI-00133,INV-00075,Court Fee,Court Fee charge,2,16.37,32.74,2026-10-17 06:00:00
+LI-00134,INV-00075,Membership,Membership charge,1,92.81,92.81,2026-10-17 06:00:00
+LI-00135,INV-00076,Membership,Membership charge,1,44.99,44.99,2026-05-17 06:00:00
+LI-00136,INV-00076,Tournament Entry,Tournament Entry charge,1,18.28,18.28,2026-05-17 06:00:00
+LI-00137,INV-00077,Court Fee,Court Fee charge,2,11.99,23.98,2025-11-09 06:00:00
+LI-00138,INV-00077,Membership,Membership charge,1,112.78,112.78,2025-11-09 06:00:00
+LI-00139,INV-00078,Tournament Entry,Tournament Entry charge,1,28.87,28.87,2026-10-11 06:00:00
+LI-00140,INV-00078,Lesson,Lesson charge,1,76.4,76.4,2026-10-11 06:00:00
+LI-00141,INV-00079,Membership,Membership charge,1,62.04,62.04,2026-08-14 06:00:00
+LI-00142,INV-00079,Court Fee,Court Fee charge,2,24.26,48.52,2026-08-14 06:00:00
+LI-00143,INV-00079,Tournament Entry,Tournament Entry charge,1,22.16,22.16,2026-08-14 06:00:00
+LI-00144,INV-00080,Court Fee,Court Fee charge,2,15.69,31.38,2025-11-10 06:00:00
+LI-00145,INV-00081,Lesson,Lesson charge,1,69.06,69.06,2026-06-05 06:00:00
+LI-00146,INV-00082,Membership,Membership charge,1,82.34,82.34,2026-10-23 06:00:00
+LI-00147,INV-00082,Tournament Entry,Tournament Entry charge,1,26.83,26.83,2026-10-23 06:00:00
+LI-00148,INV-00083,Membership,Membership charge,1,111.72,111.72,2026-03-19 06:00:00
+LI-00149,INV-00083,Court Fee,Court Fee charge,2,21.82,43.64,2026-03-19 06:00:00
+LI-00150,INV-00084,Court Fee,Court Fee charge,2,11.39,22.78,2026-01-26 06:00:00
+LI-00151,INV-00084,Tournament Entry,Tournament Entry charge,1,16.84,16.84,2026-01-26 06:00:00
+LI-00152,INV-00085,Court Fee,Court Fee charge,2,24.97,49.94,2026-06-29 06:00:00
+LI-00153,INV-00085,Membership,Membership charge,1,101.74,101.74,2026-06-29 06:00:00
+LI-00154,INV-00086,Membership,Membership charge,1,57.5,57.5,2026-08-05 06:00:00
+LI-00155,INV-00086,Tournament Entry,Tournament Entry charge,1,24.99,24.99,2026-08-05 06:00:00
+LI-00156,INV-00087,Membership,Membership charge,1,107.45,107.45,2025-12-17 06:00:00
+LI-00157,INV-00087,Tournament Entry,Tournament Entry charge,1,19.56,19.56,2025-12-17 06:00:00
+LI-00158,INV-00087,Lesson,Lesson charge,1,88.26,88.26,2025-12-17 06:00:00
+LI-00159,INV-00088,Membership,Membership charge,1,59.66,59.66,2026-05-16 06:00:00
+LI-00160,INV-00088,Lesson,Lesson charge,1,76.11,76.11,2026-05-16 06:00:00
+LI-00161,INV-00088,Court Fee,Court Fee charge,2,20.91,41.82,2026-05-16 06:00:00
+LI-00162,INV-00089,Tournament Entry,Tournament Entry charge,1,25.39,25.39,2026-03-03 06:00:00
+LI-00163,INV-00090,Membership,Membership charge,1,42.79,42.79,2026-03-25 06:00:00
+LI-00164,INV-00091,Membership,Membership charge,1,88.99,88.99,2026-10-26 06:00:00
+LI-00165,INV-00091,Lesson,Lesson charge,1,74.36,74.36,2026-10-26 06:00:00
+LI-00166,INV-00092,Membership,Membership charge,1,68.53,68.53,2026-10-23 06:00:00
+LI-00167,INV-00092,Court Fee,Court Fee charge,2,20.05,40.1,2026-10-23 06:00:00
+LI-00168,INV-00093,Tournament Entry,Tournament Entry charge,1,19.51,19.51,2025-12-07 06:00:00
+LI-00169,INV-00094,Court Fee,Court Fee charge,2,19.9,39.8,2026-02-12 06:00:00
+LI-00170,INV-00094,Lesson,Lesson charge,1,74.42,74.42,2026-02-12 06:00:00
+LI-00171,INV-00095,Court Fee,Court Fee charge,2,12.33,24.66,2026-07-28 06:00:00
+LI-00172,INV-00095,Membership,Membership charge,1,103.54,103.54,2026-07-28 06:00:00
+LI-00173,INV-00096,Membership,Membership charge,1,43.61,43.61,2026-09-16 06:00:00
+LI-00174,INV-00097,Tournament Entry,Tournament Entry charge,1,29.21,29.21,2025-11-20 06:00:00
+LI-00175,INV-00097,Lesson,Lesson charge,1,47.5,47.5,2025-11-20 06:00:00
+LI-00176,INV-00097,Court Fee,Court Fee charge,2,21.14,42.28,2025-11-20 06:00:00
+LI-00177,INV-00098,Membership,Membership charge,1,84.01,84.01,2026-05-08 06:00:00
+LI-00178,INV-00098,Tournament Entry,Tournament Entry charge,1,27.86,27.86,2026-05-08 06:00:00
+LI-00179,INV-00099,Lesson,Lesson charge,1,35.34,35.34,2026-01-10 06:00:00
+LI-00180,INV-00099,Tournament Entry,Tournament Entry charge,1,22.43,22.43,2026-01-10 06:00:00
+LI-00181,INV-00100,Lesson,Lesson charge,1,75.26,75.26,2026-08-27 06:00:00
+LI-00182,INV-00101,Lesson,Lesson charge,1,73.85,73.85,2026-01-19 06:00:00
+LI-00183,INV-00101,Tournament Entry,Tournament Entry charge,1,27.14,27.14,2026-01-19 06:00:00
+LI-00184,INV-00102,Membership,Membership charge,1,100.19,100.19,2026-07-19 06:00:00
+LI-00185,INV-00102,Tournament Entry,Tournament Entry charge,1,26.05,26.05,2026-07-19 06:00:00
+LI-00186,INV-00103,Court Fee,Court Fee charge,2,21.02,42.04,2026-04-29 06:00:00
+LI-00187,INV-00104,Membership,Membership charge,1,46.23,46.23,2026-02-18 06:00:00
+LI-00188,INV-00105,Tournament Entry,Tournament Entry charge,1,25.32,25.32,2026-10-02 06:00:00
+LI-00189,INV-00105,Lesson,Lesson charge,1,37.98,37.98,2026-10-02 06:00:00
+LI-00190,INV-00106,Court Fee,Court Fee charge,2,11.15,22.3,2026-01-03 06:00:00
+LI-00191,INV-00107,Court Fee,Court Fee charge,2,17.61,35.22,2025-12-10 06:00:00
+LI-00192,INV-00107,Lesson,Lesson charge,1,67.16,67.16,2025-12-10 06:00:00
+LI-00193,INV-00107,Membership,Membership charge,1,57.06,57.06,2025-12-10 06:00:00
+LI-00194,INV-00108,Membership,Membership charge,1,90.42,90.42,2026-02-14 06:00:00
+LI-00195,INV-00109,Membership,Membership charge,1,108.67,108.67,2026-08-15 06:00:00
+LI-00196,INV-00110,Membership,Membership charge,1,61.28,61.28,2026-01-18 06:00:00
+LI-00197,INV-00110,Lesson,Lesson charge,1,46.22,46.22,2026-01-18 06:00:00
+LI-00198,INV-00110,Tournament Entry,Tournament Entry charge,1,19.77,19.77,2026-01-18 06:00:00
+LI-00199,INV-00111,Membership,Membership charge,1,78.88,78.88,2026-07-24 06:00:00
+LI-00200,INV-00111,Court Fee,Court Fee charge,2,24.27,48.54,2026-07-24 06:00:00
+LI-00201,INV-00111,Lesson,Lesson charge,1,67.61,67.61,2026-07-24 06:00:00
+LI-00202,INV-00112,Lesson,Lesson charge,1,50.6,50.6,2025-11-19 06:00:00
+LI-00203,INV-00113,Tournament Entry,Tournament Entry charge,1,15.42,15.42,2026-03-20 06:00:00
+LI-00204,INV-00113,Court Fee,Court Fee charge,2,20.88,41.76,2026-03-20 06:00:00
+LI-00205,INV-00113,Lesson,Lesson charge,1,77.93,77.93,2026-03-20 06:00:00
+LI-00206,INV-00114,Membership,Membership charge,1,60.45,60.45,2026-10-18 06:00:00
+LI-00207,INV-00114,Court Fee,Court Fee charge,2,12.17,24.34,2026-10-18 06:00:00
+LI-00208,INV-00114,Lesson,Lesson charge,1,80.56,80.56,2026-10-18 06:00:00
+LI-00209,INV-00115,Tournament Entry,Tournament Entry charge,1,23.11,23.11,2026-09-24 06:00:00
+LI-00210,INV-00115,Court Fee,Court Fee charge,2,18.25,36.5,2026-09-24 06:00:00
+LI-00211,INV-00116,Tournament Entry,Tournament Entry charge,1,26.47,26.47,2026-05-25 06:00:00
+LI-00212,INV-00116,Court Fee,Court Fee charge,2,15.63,31.26,2026-05-25 06:00:00
+LI-00213,INV-00117,Lesson,Lesson charge,1,64.63,64.63,2026-07-27 06:00:00
+LI-00214,INV-00118,Court Fee,Court Fee charge,2,23.61,47.22,2026-04-24 06:00:00
+LI-00215,INV-00119,Membership,Membership charge,1,113.72,113.72,2026-02-20 06:00:00
+LI-00216,INV-00120,Lesson,Lesson charge,1,58.32,58.32,2026-08-31 06:00:00
+LI-00217,INV-00120,Tournament Entry,Tournament Entry charge,1,20.6,20.6,2026-08-31 06:00:00
+LI-00218,INV-00121,Tournament Entry,Tournament Entry charge,1,15.74,15.74,2026-03-18 06:00:00
+LI-00219,INV-00121,Membership,Membership charge,1,43.46,43.46,2026-03-18 06:00:00
+LI-00220,INV-00122,Court Fee,Court Fee charge,2,22.39,44.78,2025-12-20 06:00:00
+LI-00221,INV-00123,Court Fee,Court Fee charge,2,23.32,46.64,2026-08-29 06:00:00
+LI-00222,INV-00124,Membership,Membership charge,1,61.71,61.71,2026-05-05 06:00:00
+LI-00223,INV-00124,Lesson,Lesson charge,1,63.28,63.28,2026-05-05 06:00:00
+LI-00224,INV-00125,Membership,Membership charge,1,79.66,79.66,2026-08-01 06:00:00
+LI-00225,INV-00126,Court Fee,Court Fee charge,2,18.98,37.96,2026-06-14 06:00:00
+LI-00226,INV-00126,Tournament Entry,Tournament Entry charge,1,25.19,25.19,2026-06-14 06:00:00
+LI-00227,INV-00127,Court Fee,Court Fee charge,2,16.36,32.72,2025-11-19 06:00:00
+LI-00228,INV-00128,Court Fee,Court Fee charge,2,14.46,28.92,2026-10-25 06:00:00
+LI-00229,INV-00128,Membership,Membership charge,1,40.52,40.52,2026-10-25 06:00:00
+LI-00230,INV-00129,Court Fee,Court Fee charge,2,13.1,26.2,2026-10-16 06:00:00
+LI-00231,INV-00130,Tournament Entry,Tournament Entry charge,1,25.49,25.49,2026-02-25 06:00:00
+LI-00232,INV-00131,Court Fee,Court Fee charge,2,13.86,27.72,2026-06-05 06:00:00
+LI-00233,INV-00131,Lesson,Lesson charge,1,76.98,76.98,2026-06-05 06:00:00
+LI-00234,INV-00132,Lesson,Lesson charge,1,46.42,46.42,2026-01-03 06:00:00
+LI-00235,INV-00132,Membership,Membership charge,1,53.54,53.54,2026-01-03 06:00:00
+LI-00236,INV-00132,Court Fee,Court Fee charge,2,23.8,47.6,2026-01-03 06:00:00
+LI-00237,INV-00133,Tournament Entry,Tournament Entry charge,1,22.72,22.72,2026-06-16 06:00:00
+LI-00238,INV-00133,Court Fee,Court Fee charge,2,18.22,36.44,2026-06-16 06:00:00
+LI-00239,INV-00134,Membership,Membership charge,1,81.48,81.48,2026-01-12 06:00:00
+LI-00240,INV-00135,Membership,Membership charge,1,102.44,102.44,2026-07-20 06:00:00
+LI-00241,INV-00135,Tournament Entry,Tournament Entry charge,1,23.19,23.19,2026-07-20 06:00:00
+LI-00242,INV-00136,Membership,Membership charge,1,105.73,105.73,2026-08-17 06:00:00
+LI-00243,INV-00137,Court Fee,Court Fee charge,2,21.25,42.5,2026-01-04 06:00:00
+LI-00244,INV-00138,Tournament Entry,Tournament Entry charge,1,21.22,21.22,2026-03-19 06:00:00
+LI-00245,INV-00139,Tournament Entry,Tournament Entry charge,1,16.57,16.57,2026-03-19 06:00:00
+LI-00246,INV-00139,Lesson,Lesson charge,1,78.88,78.88,2026-03-19 06:00:00
+LI-00247,INV-00140,Court Fee,Court Fee charge,2,14.28,28.56,2026-05-25 06:00:00
+LI-00248,INV-00140,Tournament Entry,Tournament Entry charge,1,21.91,21.91,2026-05-25 06:00:00
+LI-00249,INV-00141,Court Fee,Court Fee charge,2,23.14,46.28,2026-10-21 06:00:00
+LI-00250,INV-00141,Membership,Membership charge,1,92.04,92.04,2026-10-21 06:00:00
+LI-00251,INV-00142,Tournament Entry,Tournament Entry charge,1,16.55,16.55,2026-08-04 06:00:00
+LI-00252,INV-00142,Lesson,Lesson charge,1,42.98,42.98,2026-08-04 06:00:00
+LI-00253,INV-00143,Court Fee,Court Fee charge,2,16.58,33.16,2026-04-19 06:00:00
+LI-00254,INV-00144,Membership,Membership charge,1,106.57,106.57,2026-10-16 06:00:00
+LI-00255,INV-00144,Court Fee,Court Fee charge,2,15.04,30.08,2026-10-16 06:00:00
+LI-00256,INV-00145,Court Fee,Court Fee charge,2,15.52,31.04,2026-08-01 06:00:00
+LI-00257,INV-00146,Lesson,Lesson charge,1,74.58,74.58,2026-05-24 06:00:00
+LI-00258,INV-00146,Court Fee,Court Fee charge,2,17.51,35.02,2026-05-24 06:00:00
+LI-00259,INV-00147,Tournament Entry,Tournament Entry charge,1,21.89,21.89,2025-11-08 06:00:00
+LI-00260,INV-00147,Lesson,Lesson charge,1,74.05,74.05,2025-11-08 06:00:00
+LI-00261,INV-00147,Court Fee,Court Fee charge,2,11.04,22.08,2025-11-08 06:00:00
+LI-00262,INV-00148,Court Fee,Court Fee charge,2,18.49,36.98,2026-05-27 06:00:00
+LI-00263,INV-00148,Lesson,Lesson charge,1,45.3,45.3,2026-05-27 06:00:00
+LI-00264,INV-00149,Membership,Membership charge,1,108.01,108.01,2026-10-11 06:00:00
+LI-00265,INV-00149,Lesson,Lesson charge,1,61.78,61.78,2026-10-11 06:00:00
+LI-00266,INV-00150,Court Fee,Court Fee charge,2,13.65,27.3,2026-08-01 06:00:00
+LI-00267,INV-00150,Lesson,Lesson charge,1,38.87,38.87,2026-08-01 06:00:00
+LI-00268,INV-00151,Membership,Membership charge,1,99.46,99.46,2025-12-26 06:00:00
+LI-00269,INV-00151,Lesson,Lesson charge,1,39.5,39.5,2025-12-26 06:00:00
+LI-00270,INV-00152,Tournament Entry,Tournament Entry charge,1,28.12,28.12,2026-10-15 06:00:00
+LI-00271,INV-00152,Court Fee,Court Fee charge,2,23.89,47.78,2026-10-15 06:00:00
+LI-00272,INV-00153,Lesson,Lesson charge,1,36.24,36.24,2026-10-20 06:00:00
+LI-00273,INV-00154,Membership,Membership charge,1,86.25,86.25,2026-09-29 06:00:00
+LI-00274,INV-00154,Court Fee,Court Fee charge,2,13.93,27.86,2026-09-29 06:00:00
+LI-00275,INV-00155,Court Fee,Court Fee charge,2,14.56,29.12,2026-02-01 06:00:00
+LI-00276,INV-00156,Lesson,Lesson charge,1,45.59,45.59,2026-10-05 06:00:00
+LI-00277,INV-00157,Court Fee,Court Fee charge,2,14.09,28.18,2026-10-04 06:00:00
+LI-00278,INV-00157,Lesson,Lesson charge,1,43.63,43.63,2026-10-04 06:00:00
+LI-00279,INV-00158,Tournament Entry,Tournament Entry charge,1,22.93,22.93,2026-04-01 06:00:00
+LI-00280,INV-00158,Membership,Membership charge,1,111.17,111.17,2026-04-01 06:00:00
+LI-00281,INV-00159,Court Fee,Court Fee charge,2,10.18,20.36,2026-09-18 06:00:00
+LI-00282,INV-00160,Membership,Membership charge,1,40.44,40.44,2025-12-14 06:00:00
+LI-00283,INV-00160,Court Fee,Court Fee charge,2,23.72,47.44,2025-12-14 06:00:00
+LI-00284,INV-00160,Lesson,Lesson charge,1,43.26,43.26,2025-12-14 06:00:00
+LI-00285,INV-00161,Court Fee,Court Fee charge,2,21.73,43.46,2026-09-30 06:00:00
+LI-00286,INV-00162,Tournament Entry,Tournament Entry charge,1,23.06,23.06,2026-02-06 06:00:00
+LI-00287,INV-00163,Court Fee,Court Fee charge,2,18.41,36.82,2026-09-12 06:00:00
+LI-00288,INV-00164,Membership,Membership charge,1,95.11,95.11,2026-04-17 06:00:00
+LI-00289,INV-00165,Lesson,Lesson charge,1,78.25,78.25,2026-07-30 06:00:00
+LI-00290,INV-00165,Tournament Entry,Tournament Entry charge,1,23.89,23.89,2026-07-30 06:00:00
+LI-00291,INV-00166,Lesson,Lesson charge,1,79.51,79.51,2025-11-21 06:00:00
+LI-00292,INV-00166,Tournament Entry,Tournament Entry charge,1,15.82,15.82,2025-11-21 06:00:00
+LI-00293,INV-00167,Lesson,Lesson charge,1,55.6,55.6,2026-08-24 06:00:00
+LI-00294,INV-00167,Membership,Membership charge,1,48.73,48.73,2026-08-24 06:00:00
+LI-00295,INV-00168,Lesson,Lesson charge,1,38.4,38.4,2026-07-19 06:00:00
+LI-00296,INV-00169,Membership,Membership charge,1,57.38,57.38,2026-01-05 06:00:00
+LI-00297,INV-00170,Membership,Membership charge,1,79.59,79.59,2026-09-23 06:00:00
+LI-00298,INV-00170,Court Fee,Court Fee charge,2,14.75,29.5,2026-09-23 06:00:00
+LI-00299,INV-00170,Tournament Entry,Tournament Entry charge,1,17.58,17.58,2026-09-23 06:00:00
+LI-00300,INV-00171,Tournament Entry,Tournament Entry charge,1,27.72,27.72,2026-11-01 06:00:00
+LI-00301,INV-00172,Lesson,Lesson charge,1,88.02,88.02,2026-10-20 06:00:00
+LI-00302,INV-00172,Membership,Membership charge,1,40.01,40.01,2026-10-20 06:00:00
+LI-00303,INV-00172,Tournament Entry,Tournament Entry charge,1,24.16,24.16,2026-10-20 06:00:00
+LI-00304,INV-00173,Membership,Membership charge,1,90.87,90.87,2026-09-25 06:00:00
+LI-00305,INV-00173,Court Fee,Court Fee charge,2,22.61,45.22,2026-09-25 06:00:00
+LI-00306,INV-00173,Tournament Entry,Tournament Entry charge,1,25.68,25.68,2026-09-25 06:00:00
+LI-00307,INV-00174,Membership,Membership charge,1,72.53,72.53,2026-09-28 06:00:00
+LI-00308,INV-00174,Court Fee,Court Fee charge,2,10.32,20.64,2026-09-28 06:00:00
+LI-00309,INV-00175,Membership,Membership charge,1,67.82,67.82,2026-09-01 06:00:00
+LI-00310,INV-00176,Lesson,Lesson charge,1,41.03,41.03,2025-12-29 06:00:00
+LI-00311,INV-00177,Court Fee,Court Fee charge,2,13.94,27.88,2026-04-04 06:00:00
+LI-00312,INV-00177,Membership,Membership charge,1,67.83,67.83,2026-04-04 06:00:00
+LI-00313,INV-00177,Tournament Entry,Tournament Entry charge,1,29.28,29.28,2026-04-04 06:00:00
+LI-00314,INV-00178,Tournament Entry,Tournament Entry charge,1,17.86,17.86,2026-09-17 06:00:00
+LI-00315,INV-00179,Tournament Entry,Tournament Entry charge,1,29.79,29.79,2026-01-14 06:00:00
+LI-00316,INV-00179,Membership,Membership charge,1,98.37,98.37,2026-01-14 06:00:00
+LI-00317,INV-00179,Court Fee,Court Fee charge,2,11.89,23.78,2026-01-14 06:00:00
+LI-00318,INV-00180,Membership,Membership charge,1,75.57,75.57,2026-09-23 06:00:00
+LI-00319,INV-00180,Court Fee,Court Fee charge,2,22.61,45.22,2026-09-23 06:00:00
+LI-00320,INV-00181,Lesson,Lesson charge,1,36.04,36.04,2026-06-26 06:00:00
+LI-00321,INV-00181,Tournament Entry,Tournament Entry charge,1,18.42,18.42,2026-06-26 06:00:00
+LI-00322,INV-00182,Court Fee,Court Fee charge,2,14.64,29.28,2026-08-23 06:00:00
+LI-00323,INV-00183,Tournament Entry,Tournament Entry charge,1,23.34,23.34,2026-08-26 06:00:00
+LI-00324,INV-00184,Court Fee,Court Fee charge,2,24.13,48.26,2026-07-19 06:00:00
+LI-00325,INV-00185,Lesson,Lesson charge,1,50.89,50.89,2026-10-31 06:00:00
+LI-00326,INV-00186,Lesson,Lesson charge,1,40.52,40.52,2025-11-08 06:00:00
+LI-00327,INV-00186,Court Fee,Court Fee charge,2,21.95,43.9,2025-11-08 06:00:00
+LI-00328,INV-00186,Membership,Membership charge,1,99.88,99.88,2025-11-08 06:00:00
+LI-00329,INV-00187,Membership,Membership charge,1,63.23,63.23,2026-01-24 06:00:00
+LI-00330,INV-00187,Court Fee,Court Fee charge,2,22.43,44.86,2026-01-24 06:00:00
+LI-00331,INV-00187,Tournament Entry,Tournament Entry charge,1,26.23,26.23,2026-01-24 06:00:00
+LI-00332,INV-00188,Lesson,Lesson charge,1,71.51,71.51,2026-02-04 06:00:00
+LI-00333,INV-00189,Membership,Membership charge,1,53.62,53.62,2026-04-04 06:00:00
+LI-00334,INV-00190,Court Fee,Court Fee charge,2,18.17,36.34,2026-07-21 06:00:00
+LI-00335,INV-00190,Membership,Membership charge,1,105.45,105.45,2026-07-21 06:00:00
+LI-00336,INV-00191,Court Fee,Court Fee charge,2,10.76,21.52,2026-09-10 06:00:00
+LI-00337,INV-00191,Membership,Membership charge,1,96.97,96.97,2026-09-10 06:00:00
+LI-00338,INV-00191,Lesson,Lesson charge,1,85.03,85.03,2026-09-10 06:00:00
+LI-00339,INV-00192,Lesson,Lesson charge,1,68.79,68.79,2026-07-16 06:00:00
+LI-00340,INV-00192,Court Fee,Court Fee charge,2,10.15,20.3,2026-07-16 06:00:00
+LI-00341,INV-00193,Lesson,Lesson charge,1,68.89,68.89,2026-03-13 06:00:00
+LI-00342,INV-00193,Tournament Entry,Tournament Entry charge,1,20.47,20.47,2026-03-13 06:00:00
+LI-00343,INV-00194,Membership,Membership charge,1,119.08,119.08,2026-06-30 06:00:00
+LI-00344,INV-00194,Court Fee,Court Fee charge,2,14.45,28.9,2026-06-30 06:00:00
+LI-00345,INV-00195,Court Fee,Court Fee charge,2,18.89,37.78,2026-10-09 06:00:00
+LI-00346,INV-00195,Lesson,Lesson charge,1,50.4,50.4,2026-10-09 06:00:00
+LI-00347,INV-00195,Membership,Membership charge,1,69.22,69.22,2026-10-09 06:00:00
+LI-00348,INV-00196,Lesson,Lesson charge,1,51.17,51.17,2025-12-15 06:00:00
+LI-00349,INV-00196,Tournament Entry,Tournament Entry charge,1,19.05,19.05,2025-12-15 06:00:00
+LI-00350,INV-00197,Lesson,Lesson charge,1,89.44,89.44,2026-02-03 06:00:00
+LI-00351,INV-00197,Tournament Entry,Tournament Entry charge,1,19.44,19.44,2026-02-03 06:00:00
+LI-00352,INV-00197,Court Fee,Court Fee charge,2,16.57,33.14,2026-02-03 06:00:00
+LI-00353,INV-00198,Lesson,Lesson charge,1,36.28,36.28,2026-05-30 06:00:00
+LI-00354,INV-00198,Tournament Entry,Tournament Entry charge,1,29.48,29.48,2026-05-30 06:00:00
+LI-00355,INV-00198,Court Fee,Court Fee charge,2,23.05,46.1,2026-05-30 06:00:00
+LI-00356,INV-00199,Court Fee,Court Fee charge,2,18.3,36.6,2026-07-31 06:00:00
+LI-00357,INV-00199,Lesson,Lesson charge,1,44.27,44.27,2026-07-31 06:00:00
+LI-00358,INV-00200,Court Fee,Court Fee charge,2,12.46,24.92,2025-12-03 06:00:00
+LI-00359,INV-00200,Tournament Entry,Tournament Entry charge,1,16.8,16.8,2025-12-03 06:00:00
+LI-00360,INV-00200,Membership,Membership charge,1,112.79,112.79,2025-12-03 06:00:00
+LI-00361,INV-00201,Tournament Entry,Tournament Entry charge,1,29.68,29.68,2026-03-25 06:00:00
+LI-00362,INV-00202,Court Fee,Court Fee charge,2,10.73,21.46,2026-05-09 06:00:00
+LI-00363,INV-00202,Membership,Membership charge,1,94.4,94.4,2026-05-09 06:00:00
+LI-00364,INV-00203,Membership,Membership charge,1,67.87,67.87,2026-02-07 06:00:00
+LI-00365,INV-00204,Tournament Entry,Tournament Entry charge,1,19.29,19.29,2025-11-07 06:00:00
+LI-00366,INV-00204,Lesson,Lesson charge,1,40.05,40.05,2025-11-07 06:00:00
+LI-00367,INV-00205,Court Fee,Court Fee charge,2,20.83,41.66,2026-06-15 06:00:00
+LI-00368,INV-00206,Lesson,Lesson charge,1,40.58,40.58,2026-05-16 06:00:00
+LI-00369,INV-00206,Tournament Entry,Tournament Entry charge,1,20.9,20.9,2026-05-16 06:00:00
+LI-00370,INV-00207,Tournament Entry,Tournament Entry charge,1,15.2,15.2,2026-05-06 06:00:00
+LI-00371,INV-00207,Court Fee,Court Fee charge,2,13.19,26.38,2026-05-06 06:00:00
+LI-00372,INV-00208,Membership,Membership charge,1,73.79,73.79,2026-05-03 06:00:00
+LI-00373,INV-00209,Tournament Entry,Tournament Entry charge,1,18.4,18.4,2026-06-24 06:00:00
+LI-00374,INV-00209,Membership,Membership charge,1,62.67,62.67,2026-06-24 06:00:00
+LI-00375,INV-00210,Court Fee,Court Fee charge,2,17.9,35.8,2026-09-04 06:00:00
+LI-00376,INV-00210,Lesson,Lesson charge,1,89.96,89.96,2026-09-04 06:00:00
+LI-00377,INV-00211,Court Fee,Court Fee charge,2,20.49,40.98,2026-03-26 06:00:00
+LI-00378,INV-00212,Tournament Entry,Tournament Entry charge,1,26.59,26.59,2025-11-29 06:00:00
+LI-00379,INV-00212,Court Fee,Court Fee charge,2,10.68,21.36,2025-11-29 06:00:00
+LI-00380,INV-00213,Membership,Membership charge,1,113.65,113.65,2026-03-25 06:00:00
+LI-00381,INV-00213,Court Fee,Court Fee charge,2,19.16,38.32,2026-03-25 06:00:00
+LI-00382,INV-00213,Lesson,Lesson charge,1,83.76,83.76,2026-03-25 06:00:00
+LI-00383,INV-00214,Tournament Entry,Tournament Entry charge,1,23.31,23.31,2026-09-23 06:00:00
+LI-00384,INV-00214,Court Fee,Court Fee charge,2,22.8,45.6,2026-09-23 06:00:00
+LI-00385,INV-00215,Lesson,Lesson charge,1,78.95,78.95,2025-11-04 06:00:00
+LI-00386,INV-00215,Court Fee,Court Fee charge,2,10.38,20.76,2025-11-04 06:00:00
+LI-00387,INV-00216,Tournament Entry,Tournament Entry charge,1,17.15,17.15,2026-02-12 06:00:00
+LI-00388,INV-00216,Membership,Membership charge,1,47.88,47.88,2026-02-12 06:00:00
+LI-00389,INV-00217,Tournament Entry,Tournament Entry charge,1,21.86,21.86,2026-09-18 06:00:00
+LI-00390,INV-00217,Court Fee,Court Fee charge,2,25.0,50.0,2026-09-18 06:00:00
+LI-00391,INV-00218,Tournament Entry,Tournament Entry charge,1,25.21,25.21,2026-05-13 06:00:00
+LI-00392,INV-00219,Lesson,Lesson charge,1,60.27,60.27,2026-10-08 06:00:00
+LI-00393,INV-00220,Tournament Entry,Tournament Entry charge,1,18.83,18.83,2026-05-30 06:00:00
+LI-00394,INV-00221,Court Fee,Court Fee charge,2,13.83,27.66,2026-01-20 06:00:00
+LI-00395,INV-00222,Lesson,Lesson charge,1,72.9,72.9,2026-10-28 06:00:00
+LI-00396,INV-00223,Membership,Membership charge,1,103.99,103.99,2025-12-15 06:00:00
+LI-00397,INV-00223,Court Fee,Court Fee charge,2,19.54,39.08,2025-12-15 06:00:00
+LI-00398,INV-00224,Membership,Membership charge,1,59.54,59.54,2026-08-24 06:00:00
+LI-00399,INV-00224,Lesson,Lesson charge,1,63.57,63.57,2026-08-24 06:00:00
+LI-00400,INV-00225,Tournament Entry,Tournament Entry charge,1,29.54,29.54,2026-07-10 06:00:00
+LI-00401,INV-00225,Court Fee,Court Fee charge,2,10.14,20.28,2026-07-10 06:00:00
+LI-00402,INV-00226,Membership,Membership charge,1,82.84,82.84,2026-03-08 06:00:00
+LI-00403,INV-00226,Lesson,Lesson charge,1,64.87,64.87,2026-03-08 06:00:00
+LI-00404,INV-00227,Lesson,Lesson charge,1,38.49,38.49,2025-11-30 06:00:00
+LI-00405,INV-00227,Court Fee,Court Fee charge,2,22.64,45.28,2025-11-30 06:00:00
+LI-00406,INV-00227,Membership,Membership charge,1,41.08,41.08,2025-11-30 06:00:00
+LI-00407,INV-00228,Membership,Membership charge,1,104.55,104.55,2026-08-29 06:00:00
+LI-00408,INV-00228,Court Fee,Court Fee charge,2,21.55,43.1,2026-08-29 06:00:00
+LI-00409,INV-00228,Tournament Entry,Tournament Entry charge,1,16.47,16.47,2026-08-29 06:00:00
+LI-00410,INV-00229,Court Fee,Court Fee charge,2,21.99,43.98,2025-12-09 06:00:00
+LI-00411,INV-00230,Membership,Membership charge,1,104.72,104.72,2026-02-11 06:00:00
+LI-00412,INV-00230,Lesson,Lesson charge,1,78.01,78.01,2026-02-11 06:00:00
+LI-00413,INV-00231,Lesson,Lesson charge,1,81.48,81.48,2026-03-29 06:00:00
+LI-00414,INV-00232,Lesson,Lesson charge,1,81.73,81.73,2026-03-15 06:00:00
+LI-00415,INV-00232,Tournament Entry,Tournament Entry charge,1,17.54,17.54,2026-03-15 06:00:00
+LI-00416,INV-00233,Court Fee,Court Fee charge,2,15.07,30.14,2026-03-05 06:00:00
+LI-00417,INV-00233,Tournament Entry,Tournament Entry charge,1,19.22,19.22,2026-03-05 06:00:00
+LI-00418,INV-00233,Membership,Membership charge,1,109.08,109.08,2026-03-05 06:00:00
+LI-00419,INV-00234,Membership,Membership charge,1,112.55,112.55,2026-10-18 06:00:00
+LI-00420,INV-00234,Court Fee,Court Fee charge,2,13.03,26.06,2026-10-18 06:00:00
+LI-00421,INV-00234,Lesson,Lesson charge,1,38.42,38.42,2026-10-18 06:00:00
+LI-00422,INV-00235,Lesson,Lesson charge,1,59.49,59.49,2026-08-30 06:00:00
+LI-00423,INV-00235,Tournament Entry,Tournament Entry charge,1,22.76,22.76,2026-08-30 06:00:00
+LI-00424,INV-00236,Membership,Membership charge,1,68.7,68.7,2026-05-08 06:00:00
+LI-00425,INV-00237,Tournament Entry,Tournament Entry charge,1,29.6,29.6,2026-07-23 06:00:00
+LI-00426,INV-00237,Membership,Membership charge,1,59.39,59.39,2026-07-23 06:00:00
+LI-00427,INV-00237,Lesson,Lesson charge,1,76.48,76.48,2026-07-23 06:00:00
+LI-00428,INV-00238,Lesson,Lesson charge,1,37.18,37.18,2026-08-14 06:00:00
+LI-00429,INV-00238,Court Fee,Court Fee charge,2,20.93,41.86,2026-08-14 06:00:00
+LI-00430,INV-00239,Lesson,Lesson charge,1,46.23,46.23,2025-12-29 06:00:00
+LI-00431,INV-00240,Membership,Membership charge,1,108.24,108.24,2026-01-18 06:00:00
+LI-00432,INV-00241,Membership,Membership charge,1,111.16,111.16,2026-02-08 06:00:00
+LI-00433,INV-00242,Tournament Entry,Tournament Entry charge,1,15.04,15.04,2026-07-08 06:00:00
+LI-00434,INV-00243,Tournament Entry,Tournament Entry charge,1,29.75,29.75,2026-02-04 06:00:00
+LI-00435,INV-00243,Membership,Membership charge,1,69.6,69.6,2026-02-04 06:00:00
+LI-00436,INV-00243,Lesson,Lesson charge,1,52.03,52.03,2026-02-04 06:00:00
+LI-00437,INV-00244,Tournament Entry,Tournament Entry charge,1,23.77,23.77,2026-04-17 06:00:00
+LI-00438,INV-00244,Lesson,Lesson charge,1,38.06,38.06,2026-04-17 06:00:00
+LI-00439,INV-00245,Tournament Entry,Tournament Entry charge,1,18.96,18.96,2025-11-08 06:00:00
+LI-00440,INV-00245,Court Fee,Court Fee charge,2,19.67,39.34,2025-11-08 06:00:00
+LI-00441,INV-00245,Lesson,Lesson charge,1,52.76,52.76,2025-11-08 06:00:00
+LI-00442,INV-00246,Tournament Entry,Tournament Entry charge,1,25.52,25.52,2026-02-24 06:00:00
+LI-00443,INV-00247,Membership,Membership charge,1,94.31,94.31,2026-05-05 06:00:00
+LI-00444,INV-00247,Court Fee,Court Fee charge,2,11.22,22.44,2026-05-05 06:00:00
+LI-00445,INV-00248,Court Fee,Court Fee charge,2,12.85,25.7,2026-10-11 06:00:00
+LI-00446,INV-00249,Membership,Membership charge,1,83.4,83.4,2026-05-24 06:00:00
+LI-00447,INV-00250,Court Fee,Court Fee charge,2,16.01,32.02,2026-09-01 06:00:00
+LI-00448,INV-00250,Membership,Membership charge,1,80.61,80.61,2026-09-01 06:00:00
+LI-00449,INV-00251,Lesson,Lesson charge,1,69.57,69.57,2026-04-25 06:00:00
+LI-00450,INV-00251,Membership,Membership charge,1,92.74,92.74,2026-04-25 06:00:00
+LI-00451,INV-00252,Court Fee,Court Fee charge,2,15.66,31.32,2026-08-13 06:00:00
+LI-00452,INV-00252,Lesson,Lesson charge,1,65.27,65.27,2026-08-13 06:00:00
+LI-00453,INV-00253,Tournament Entry,Tournament Entry charge,1,29.05,29.05,2026-06-20 06:00:00
+LI-00454,INV-00253,Court Fee,Court Fee charge,2,24.57,49.14,2026-06-20 06:00:00
+LI-00455,INV-00254,Court Fee,Court Fee charge,2,10.22,20.44,2026-05-24 06:00:00
+LI-00456,INV-00254,Tournament Entry,Tournament Entry charge,1,28.51,28.51,2026-05-24 06:00:00
+LI-00457,INV-00255,Court Fee,Court Fee charge,2,19.96,39.92,2026-07-11 06:00:00
+LI-00458,INV-00255,Lesson,Lesson charge,1,35.93,35.93,2026-07-11 06:00:00
+LI-00459,INV-00256,Lesson,Lesson charge,1,44.01,44.01,2026-01-25 06:00:00
+LI-00460,INV-00256,Court Fee,Court Fee charge,2,13.69,27.38,2026-01-25 06:00:00
+LI-00461,INV-00257,Membership,Membership charge,1,86.51,86.51,2026-07-21 06:00:00
+LI-00462,INV-00258,Lesson,Lesson charge,1,35.36,35.36,2026-08-06 06:00:00
+LI-00463,INV-00258,Tournament Entry,Tournament Entry charge,1,16.8,16.8,2026-08-06 06:00:00
+LI-00464,INV-00258,Membership,Membership charge,1,100.86,100.86,2026-08-06 06:00:00
+LI-00465,INV-00259,Court Fee,Court Fee charge,2,19.89,39.78,2025-11-26 06:00:00
+LI-00466,INV-00260,Tournament Entry,Tournament Entry charge,1,29.35,29.35,2026-08-30 06:00:00
+LI-00467,INV-00260,Membership,Membership charge,1,108.94,108.94,2026-08-30 06:00:00
+LI-00468,INV-00261,Tournament Entry,Tournament Entry charge,1,26.05,26.05,2026-03-10 06:00:00
+LI-00469,INV-00261,Court Fee,Court Fee charge,2,22.83,45.66,2026-03-10 06:00:00
+LI-00470,INV-00261,Lesson,Lesson charge,1,83.26,83.26,2026-03-10 06:00:00
+LI-00471,INV-00262,Membership,Membership charge,1,57.37,57.37,2026-04-03 06:00:00
+LI-00472,INV-00262,Lesson,Lesson charge,1,84.38,84.38,2026-04-03 06:00:00
+LI-00473,INV-00262,Court Fee,Court Fee charge,2,13.47,26.94,2026-04-03 06:00:00
+LI-00474,INV-00263,Membership,Membership charge,1,92.15,92.15,2026-09-19 06:00:00
+LI-00475,INV-00263,Court Fee,Court Fee charge,2,22.05,44.1,2026-09-19 06:00:00
+LI-00476,INV-00263,Lesson,Lesson charge,1,65.48,65.48,2026-09-19 06:00:00
+LI-00477,INV-00264,Court Fee,Court Fee charge,2,15.56,31.12,2026-09-19 06:00:00
+LI-00478,INV-00265,Lesson,Lesson charge,1,66.45,66.45,2026-03-15 06:00:00
+LI-00479,INV-00265,Court Fee,Court Fee charge,2,11.45,22.9,2026-03-15 06:00:00
+LI-00480,INV-00266,Tournament Entry,Tournament Entry charge,1,27.11,27.11,2026-08-21 06:00:00
+LI-00481,INV-00266,Court Fee,Court Fee charge,2,20.94,41.88,2026-08-21 06:00:00
+LI-00482,INV-00266,Lesson,Lesson charge,1,79.16,79.16,2026-08-21 06:00:00
+LI-00483,INV-00267,Membership,Membership charge,1,48.3,48.3,2026-08-09 06:00:00
+LI-00484,INV-00267,Court Fee,Court Fee charge,2,17.48,34.96,2026-08-09 06:00:00
+LI-00485,INV-00268,Membership,Membership charge,1,66.15,66.15,2026-10-12 06:00:00
+LI-00486,INV-00269,Court Fee,Court Fee charge,2,12.7,25.4,2026-02-08 06:00:00
+LI-00487,INV-00269,Membership,Membership charge,1,101.43,101.43,2026-02-08 06:00:00
+LI-00488,INV-00270,Court Fee,Court Fee charge,2,17.21,34.42,2026-10-16 06:00:00
+LI-00489,INV-00270,Tournament Entry,Tournament Entry charge,1,20.75,20.75,2026-10-16 06:00:00
+LI-00490,INV-00271,Court Fee,Court Fee charge,2,22.98,45.96,2026-06-24 06:00:00
+LI-00491,INV-00272,Membership,Membership charge,1,110.39,110.39,2026-09-23 06:00:00
+LI-00492,INV-00272,Court Fee,Court Fee charge,2,17.24,34.48,2026-09-23 06:00:00
+LI-00493,INV-00273,Lesson,Lesson charge,1,38.65,38.65,2026-07-18 06:00:00
+LI-00494,INV-00274,Court Fee,Court Fee charge,2,18.83,37.66,2026-05-30 06:00:00
+LI-00495,INV-00274,Lesson,Lesson charge,1,38.2,38.2,2026-05-30 06:00:00
+LI-00496,INV-00275,Court Fee,Court Fee charge,2,12.96,25.92,2026-02-21 06:00:00
+LI-00497,INV-00276,Tournament Entry,Tournament Entry charge,1,26.8,26.8,2026-09-07 06:00:00
+LI-00498,INV-00277,Lesson,Lesson charge,1,75.89,75.89,2026-01-05 06:00:00
+LI-00499,INV-00277,Tournament Entry,Tournament Entry charge,1,25.77,25.77,2026-01-05 06:00:00
+LI-00500,INV-00278,Tournament Entry,Tournament Entry charge,1,16.06,16.06,2026-06-07 06:00:00
+LI-00501,INV-00278,Membership,Membership charge,1,61.47,61.47,2026-06-07 06:00:00
+LI-00502,INV-00278,Court Fee,Court Fee charge,2,23.61,47.22,2026-06-07 06:00:00
+LI-00503,INV-00279,Court Fee,Court Fee charge,2,10.76,21.52,2026-06-15 06:00:00
+LI-00504,INV-00279,Lesson,Lesson charge,1,78.67,78.67,2026-06-15 06:00:00
+LI-00505,INV-00280,Membership,Membership charge,1,81.48,81.48,2026-09-30 06:00:00
+LI-00506,INV-00281,Lesson,Lesson charge,1,81.05,81.05,2025-12-04 06:00:00
+LI-00507,INV-00281,Membership,Membership charge,1,74.7,74.7,2025-12-04 06:00:00
+LI-00508,INV-00282,Tournament Entry,Tournament Entry charge,1,24.51,24.51,2025-11-24 06:00:00
+LI-00509,INV-00282,Court Fee,Court Fee charge,2,13.18,26.36,2025-11-24 06:00:00
+LI-00510,INV-00283,Lesson,Lesson charge,1,43.75,43.75,2026-04-06 06:00:00
+LI-00511,INV-00283,Tournament Entry,Tournament Entry charge,1,15.02,15.02,2026-04-06 06:00:00
+LI-00512,INV-00283,Court Fee,Court Fee charge,2,19.16,38.32,2026-04-06 06:00:00
+LI-00513,INV-00284,Tournament Entry,Tournament Entry charge,1,20.09,20.09,2026-09-18 06:00:00
+LI-00514,INV-00284,Lesson,Lesson charge,1,59.82,59.82,2026-09-18 06:00:00
+LI-00515,INV-00285,Court Fee,Court Fee charge,2,22.39,44.78,2026-07-25 06:00:00
+LI-00516,INV-00285,Lesson,Lesson charge,1,71.98,71.98,2026-07-25 06:00:00
+LI-00517,INV-00286,Tournament Entry,Tournament Entry charge,1,24.88,24.88,2026-02-11 06:00:00
+LI-00518,INV-00287,Membership,Membership charge,1,81.67,81.67,2026-07-25 06:00:00
+LI-00519,INV-00287,Tournament Entry,Tournament Entry charge,1,17.11,17.11,2026-07-25 06:00:00
+LI-00520,INV-00287,Lesson,Lesson charge,1,60.72,60.72,2026-07-25 06:00:00
+LI-00521,INV-00288,Lesson,Lesson charge,1,61.21,61.21,2026-09-09 06:00:00
+LI-00522,INV-00289,Court Fee,Court Fee charge,2,11.19,22.38,2026-07-18 06:00:00
+LI-00523,INV-00289,Lesson,Lesson charge,1,44.23,44.23,2026-07-18 06:00:00
+LI-00524,INV-00289,Tournament Entry,Tournament Entry charge,1,26.84,26.84,2026-07-18 06:00:00
+LI-00525,INV-00290,Membership,Membership charge,1,70.13,70.13,2026-01-15 06:00:00
+LI-00526,INV-00291,Court Fee,Court Fee charge,2,23.07,46.14,2026-06-07 06:00:00
+LI-00527,INV-00292,Court Fee,Court Fee charge,2,20.85,41.7,2026-05-27 06:00:00
+LI-00528,INV-00293,Tournament Entry,Tournament Entry charge,1,28.83,28.83,2026-06-06 06:00:00
+LI-00529,INV-00293,Membership,Membership charge,1,75.23,75.23,2026-06-06 06:00:00
+LI-00530,INV-00294,Tournament Entry,Tournament Entry charge,1,18.5,18.5,2026-06-14 06:00:00
+LI-00531,INV-00294,Court Fee,Court Fee charge,2,17.61,35.22,2026-06-14 06:00:00
+LI-00532,INV-00295,Tournament Entry,Tournament Entry charge,1,16.4,16.4,2026-01-06 06:00:00
+LI-00533,INV-00296,Lesson,Lesson charge,1,68.98,68.98,2026-07-02 06:00:00
+LI-00534,INV-00296,Tournament Entry,Tournament Entry charge,1,25.32,25.32,2026-07-02 06:00:00
+LI-00535,INV-00296,Court Fee,Court Fee charge,2,20.77,41.54,2026-07-02 06:00:00
+LI-00536,INV-00297,Membership,Membership charge,1,82.28,82.28,2026-08-07 06:00:00
+LI-00537,INV-00297,Court Fee,Court Fee charge,2,23.55,47.1,2026-08-07 06:00:00
+LI-00538,INV-00297,Tournament Entry,Tournament Entry charge,1,17.09,17.09,2026-08-07 06:00:00
+LI-00539,INV-00298,Membership,Membership charge,1,69.12,69.12,2026-02-14 06:00:00
+LI-00540,INV-00298,Lesson,Lesson charge,1,39.35,39.35,2026-02-14 06:00:00
+LI-00541,INV-00299,Lesson,Lesson charge,1,84.71,84.71,2026-01-30 06:00:00
+LI-00542,INV-00300,Tournament Entry,Tournament Entry charge,1,20.09,20.09,2025-12-06 06:00:00
+LI-00543,INV-00300,Lesson,Lesson charge,1,67.54,67.54,2025-12-06 06:00:00
+LI-00544,INV-00301,Membership,Membership charge,1,73.84,73.84,2026-02-08 06:00:00
+LI-00545,INV-00301,Court Fee,Court Fee charge,2,13.08,26.16,2026-02-08 06:00:00
+LI-00546,INV-00302,Court Fee,Court Fee charge,2,17.06,34.12,2025-11-28 06:00:00
+LI-00547,INV-00303,Lesson,Lesson charge,1,60.94,60.94,2026-02-08 06:00:00
+LI-00548,INV-00304,Court Fee,Court Fee charge,2,16.04,32.08,2026-01-14 06:00:00
+LI-00549,INV-00305,Lesson,Lesson charge,1,42.78,42.78,2026-01-23 06:00:00
+LI-00550,INV-00306,Court Fee,Court Fee charge,2,20.57,41.14,2026-03-09 06:00:00
+LI-00551,INV-00307,Court Fee,Court Fee charge,2,11.8,23.6,2026-05-21 06:00:00
+LI-00552,INV-00308,Court Fee,Court Fee charge,2,21.1,42.2,2026-10-19 06:00:00
+LI-00553,INV-00309,Tournament Entry,Tournament Entry charge,1,28.78,28.78,2026-02-04 06:00:00
+LI-00554,INV-00309,Lesson,Lesson charge,1,82.39,82.39,2026-02-04 06:00:00
+LI-00555,INV-00310,Tournament Entry,Tournament Entry charge,1,25.86,25.86,2026-01-12 06:00:00
+LI-00556,INV-00310,Lesson,Lesson charge,1,46.73,46.73,2026-01-12 06:00:00
+LI-00557,INV-00310,Membership,Membership charge,1,49.64,49.64,2026-01-12 06:00:00
+LI-00558,INV-00311,Court Fee,Court Fee charge,2,20.55,41.1,2026-01-16 06:00:00
+LI-00559,INV-00312,Membership,Membership charge,1,113.82,113.82,2026-04-13 06:00:00
+LI-00560,INV-00312,Court Fee,Court Fee charge,2,14.28,28.56,2026-04-13 06:00:00
+LI-00561,INV-00313,Lesson,Lesson charge,1,45.06,45.06,2025-11-14 06:00:00
+LI-00562,INV-00313,Membership,Membership charge,1,118.41,118.41,2025-11-14 06:00:00
+LI-00563,INV-00314,Court Fee,Court Fee charge,2,20.87,41.74,2026-06-04 06:00:00
+LI-00564,INV-00315,Tournament Entry,Tournament Entry charge,1,27.97,27.97,2026-08-26 06:00:00
+LI-00565,INV-00316,Court Fee,Court Fee charge,2,15.74,31.48,2026-08-10 06:00:00
+LI-00566,INV-00316,Lesson,Lesson charge,1,35.57,35.57,2026-08-10 06:00:00
+LI-00567,INV-00317,Court Fee,Court Fee charge,2,22.92,45.84,2026-04-10 06:00:00
+LI-00568,INV-00317,Tournament Entry,Tournament Entry charge,1,18.45,18.45,2026-04-10 06:00:00
+LI-00569,INV-00318,Lesson,Lesson charge,1,43.1,43.1,2026-06-21 06:00:00
+LI-00570,INV-00318,Membership,Membership charge,1,64.99,64.99,2026-06-21 06:00:00
+LI-00571,INV-00318,Court Fee,Court Fee charge,2,18.54,37.08,2026-06-21 06:00:00
+LI-00572,INV-00319,Membership,Membership charge,1,91.94,91.94,2026-01-01 06:00:00
+LI-00573,INV-00319,Court Fee,Court Fee charge,2,19.56,39.12,2026-01-01 06:00:00
+LI-00574,INV-00320,Membership,Membership charge,1,102.12,102.12,2026-06-02 06:00:00
+LI-00575,INV-00321,Tournament Entry,Tournament Entry charge,1,28.67,28.67,2026-07-20 06:00:00
+LI-00576,INV-00322,Tournament Entry,Tournament Entry charge,1,24.95,24.95,2026-08-22 06:00:00
+LI-00577,INV-00322,Membership,Membership charge,1,42.81,42.81,2026-08-22 06:00:00
+LI-00578,INV-00322,Court Fee,Court Fee charge,2,13.08,26.16,2026-08-22 06:00:00
+LI-00579,INV-00323,Court Fee,Court Fee charge,2,23.58,47.16,2026-03-18 06:00:00
+LI-00580,INV-00323,Tournament Entry,Tournament Entry charge,1,20.7,20.7,2026-03-18 06:00:00
+LI-00581,INV-00323,Membership,Membership charge,1,50.11,50.11,2026-03-18 06:00:00
+LI-00582,INV-00324,Court Fee,Court Fee charge,2,14.42,28.84,2025-12-06 06:00:00
+LI-00583,INV-00324,Membership,Membership charge,1,64.01,64.01,2025-12-06 06:00:00
+LI-00584,INV-00324,Lesson,Lesson charge,1,61.64,61.64,2025-12-06 06:00:00
+LI-00585,INV-00325,Lesson,Lesson charge,1,35.7,35.7,2025-11-14 06:00:00
+LI-00586,INV-00325,Tournament Entry,Tournament Entry charge,1,26.42,26.42,2025-11-14 06:00:00
+LI-00587,INV-00326,Membership,Membership charge,1,46.03,46.03,2026-04-19 06:00:00
+LI-00588,INV-00326,Court Fee,Court Fee charge,2,19.85,39.7,2026-04-19 06:00:00
+LI-00589,INV-00327,Lesson,Lesson charge,1,43.21,43.21,2025-11-30 06:00:00
+LI-00590,INV-00327,Membership,Membership charge,1,110.91,110.91,2025-11-30 06:00:00
+LI-00591,INV-00327,Court Fee,Court Fee charge,2,16.92,33.84,2025-11-30 06:00:00
+LI-00592,INV-00328,Tournament Entry,Tournament Entry charge,1,24.85,24.85,2026-03-15 06:00:00
+LI-00593,INV-00328,Court Fee,Court Fee charge,2,11.12,22.24,2026-03-15 06:00:00
+LI-00594,INV-00329,Tournament Entry,Tournament Entry charge,1,19.48,19.48,2025-12-31 06:00:00
+LI-00595,INV-00330,Court Fee,Court Fee charge,2,24.5,49.0,2026-03-05 06:00:00
+LI-00596,INV-00330,Tournament Entry,Tournament Entry charge,1,15.61,15.61,2026-03-05 06:00:00
+LI-00597,INV-00330,Lesson,Lesson charge,1,60.03,60.03,2026-03-05 06:00:00
+LI-00598,INV-00331,Tournament Entry,Tournament Entry charge,1,22.34,22.34,2026-08-10 06:00:00
+LI-00599,INV-00331,Lesson,Lesson charge,1,40.28,40.28,2026-08-10 06:00:00
+LI-00600,INV-00331,Court Fee,Court Fee charge,2,20.11,40.22,2026-08-10 06:00:00
+LI-00601,INV-00332,Membership,Membership charge,1,94.95,94.95,2026-08-07 06:00:00
+LI-00602,INV-00333,Membership,Membership charge,1,65.33,65.33,2026-10-22 06:00:00
+LI-00603,INV-00333,Court Fee,Court Fee charge,2,18.31,36.62,2026-10-22 06:00:00
+LI-00604,INV-00334,Membership,Membership charge,1,72.62,72.62,2026-02-09 06:00:00
+LI-00605,INV-00335,Court Fee,Court Fee charge,2,18.88,37.76,2026-01-31 06:00:00
+LI-00606,INV-00335,Tournament Entry,Tournament Entry charge,1,19.58,19.58,2026-01-31 06:00:00
+LI-00607,INV-00335,Membership,Membership charge,1,46.59,46.59,2026-01-31 06:00:00
+LI-00608,INV-00336,Tournament Entry,Tournament Entry charge,1,17.65,17.65,2026-02-01 06:00:00
+LI-00609,INV-00336,Membership,Membership charge,1,64.96,64.96,2026-02-01 06:00:00
+LI-00610,INV-00336,Lesson,Lesson charge,1,67.8,67.8,2026-02-01 06:00:00
+LI-00611,INV-00337,Lesson,Lesson charge,1,40.9,40.9,2026-01-18 06:00:00
+LI-00612,INV-00338,Tournament Entry,Tournament Entry charge,1,21.94,21.94,2026-01-26 06:00:00
+LI-00613,INV-00339,Court Fee,Court Fee charge,2,17.97,35.94,2026-09-27 06:00:00
+LI-00614,INV-00339,Tournament Entry,Tournament Entry charge,1,16.91,16.91,2026-09-27 06:00:00
+LI-00615,INV-00340,Tournament Entry,Tournament Entry charge,1,15.73,15.73,2026-04-16 06:00:00
+LI-00616,INV-00341,Membership,Membership charge,1,78.41,78.41,2026-09-22 06:00:00
+LI-00617,INV-00342,Court Fee,Court Fee charge,2,11.31,22.62,2026-07-28 06:00:00
+LI-00618,INV-00343,Lesson,Lesson charge,1,87.24,87.24,2026-09-17 06:00:00
+LI-00619,INV-00343,Membership,Membership charge,1,47.61,47.61,2026-09-17 06:00:00
+LI-00620,INV-00344,Lesson,Lesson charge,1,73.71,73.71,2025-11-17 06:00:00
+LI-00621,INV-00345,Membership,Membership charge,1,80.36,80.36,2026-08-29 06:00:00
+LI-00622,INV-00345,Court Fee,Court Fee charge,2,17.66,35.32,2026-08-29 06:00:00
+LI-00623,INV-00346,Lesson,Lesson charge,1,40.9,40.9,2026-09-18 06:00:00
+LI-00624,INV-00347,Tournament Entry,Tournament Entry charge,1,29.83,29.83,2026-04-25 06:00:00
+LI-00625,INV-00347,Court Fee,Court Fee charge,2,12.73,25.46,2026-04-25 06:00:00
+LI-00626,INV-00347,Membership,Membership charge,1,77.4,77.4,2026-04-25 06:00:00
+LI-00627,INV-00348,Tournament Entry,Tournament Entry charge,1,24.25,24.25,2026-02-08 06:00:00
+LI-00628,INV-00349,Membership,Membership charge,1,69.59,69.59,2026-03-26 06:00:00
+LI-00629,INV-00349,Tournament Entry,Tournament Entry charge,1,19.54,19.54,2026-03-26 06:00:00
+LI-00630,INV-00349,Court Fee,Court Fee charge,2,13.84,27.68,2026-03-26 06:00:00
+LI-00631,INV-00350,Tournament Entry,Tournament Entry charge,1,15.63,15.63,2026-08-03 06:00:00
+LI-00632,INV-00350,Membership,Membership charge,1,67.95,67.95,2026-08-03 06:00:00
+LI-00633,INV-00351,Court Fee,Court Fee charge,2,17.01,34.02,2026-04-01 06:00:00
+LI-00634,INV-00352,Membership,Membership charge,1,54.66,54.66,2026-06-02 06:00:00
+LI-00635,INV-00352,Court Fee,Court Fee charge,2,13.44,26.88,2026-06-02 06:00:00
+LI-00636,INV-00353,Membership,Membership charge,1,68.48,68.48,2026-10-05 06:00:00
+LI-00637,INV-00353,Court Fee,Court Fee charge,2,16.33,32.66,2026-10-05 06:00:00
+LI-00638,INV-00353,Tournament Entry,Tournament Entry charge,1,28.78,28.78,2026-10-05 06:00:00
+LI-00639,INV-00354,Membership,Membership charge,1,68.02,68.02,2026-03-19 06:00:00
+LI-00640,INV-00354,Tournament Entry,Tournament Entry charge,1,22.13,22.13,2026-03-19 06:00:00
+LI-00641,INV-00354,Court Fee,Court Fee charge,2,17.06,34.12,2026-03-19 06:00:00
+LI-00642,INV-00355,Tournament Entry,Tournament Entry charge,1,16.07,16.07,2026-06-15 06:00:00
+LI-00643,INV-00356,Court Fee,Court Fee charge,2,10.31,20.62,2026-05-19 06:00:00
+LI-00644,INV-00357,Membership,Membership charge,1,65.75,65.75,2026-10-27 06:00:00
+LI-00645,INV-00358,Tournament Entry,Tournament Entry charge,1,24.07,24.07,2026-08-02 06:00:00
+LI-00646,INV-00358,Membership,Membership charge,1,44.97,44.97,2026-08-02 06:00:00
+LI-00647,INV-00358,Court Fee,Court Fee charge,2,17.81,35.62,2026-08-02 06:00:00
+LI-00648,INV-00359,Lesson,Lesson charge,1,40.47,40.47,2026-03-14 06:00:00
+LI-00649,INV-00359,Tournament Entry,Tournament Entry charge,1,19.49,19.49,2026-03-14 06:00:00
+LI-00650,INV-00360,Court Fee,Court Fee charge,2,12.62,25.24,2026-03-02 06:00:00
+LI-00651,INV-00360,Tournament Entry,Tournament Entry charge,1,26.57,26.57,2026-03-02 06:00:00
+LI-00652,INV-00360,Lesson,Lesson charge,1,67.83,67.83,2026-03-02 06:00:00
+LI-00653,INV-00361,Court Fee,Court Fee charge,2,12.83,25.66,2025-12-20 06:00:00
+LI-00654,INV-00362,Court Fee,Court Fee charge,2,16.93,33.86,2026-09-12 06:00:00
+LI-00655,INV-00363,Tournament Entry,Tournament Entry charge,1,15.35,15.35,2026-10-14 06:00:00
+LI-00656,INV-00363,Membership,Membership charge,1,46.47,46.47,2026-10-14 06:00:00
+LI-00657,INV-00363,Court Fee,Court Fee charge,2,11.57,23.14,2026-10-14 06:00:00
+LI-00658,INV-00364,Tournament Entry,Tournament Entry charge,1,25.63,25.63,2026-10-11 06:00:00
+LI-00659,INV-00364,Lesson,Lesson charge,1,70.26,70.26,2026-10-11 06:00:00
+LI-00660,INV-00365,Tournament Entry,Tournament Entry charge,1,27.29,27.29,2026-01-24 06:00:00
+LI-00661,INV-00365,Membership,Membership charge,1,84.34,84.34,2026-01-24 06:00:00
+LI-00662,INV-00366,Lesson,Lesson charge,1,36.43,36.43,2025-11-27 06:00:00
+LI-00663,INV-00367,Tournament Entry,Tournament Entry charge,1,22.75,22.75,2026-05-29 06:00:00
+LI-00664,INV-00368,Tournament Entry,Tournament Entry charge,1,24.57,24.57,2026-02-02 06:00:00
+LI-00665,INV-00368,Membership,Membership charge,1,61.07,61.07,2026-02-02 06:00:00
+LI-00666,INV-00368,Court Fee,Court Fee charge,2,16.63,33.26,2026-02-02 06:00:00
+LI-00667,INV-00369,Tournament Entry,Tournament Entry charge,1,29.52,29.52,2026-03-15 06:00:00
+LI-00668,INV-00370,Tournament Entry,Tournament Entry charge,1,23.52,23.52,2026-07-12 06:00:00
+LI-00669,INV-00370,Membership,Membership charge,1,41.19,41.19,2026-07-12 06:00:00
+LI-00670,INV-00370,Lesson,Lesson charge,1,84.53,84.53,2026-07-12 06:00:00
+LI-00671,INV-00371,Tournament Entry,Tournament Entry charge,1,15.29,15.29,2025-11-29 06:00:00
+LI-00672,INV-00371,Court Fee,Court Fee charge,2,17.92,35.84,2025-11-29 06:00:00
+LI-00673,INV-00371,Lesson,Lesson charge,1,75.75,75.75,2025-11-29 06:00:00
+LI-00674,INV-00372,Lesson,Lesson charge,1,41.61,41.61,2025-11-24 06:00:00
+LI-00675,INV-00372,Court Fee,Court Fee charge,2,15.17,30.34,2025-11-24 06:00:00
+LI-00676,INV-00373,Membership,Membership charge,1,78.74,78.74,2026-05-03 06:00:00
+LI-00677,INV-00374,Membership,Membership charge,1,46.55,46.55,2026-07-22 06:00:00
+LI-00678,INV-00375,Court Fee,Court Fee charge,2,24.05,48.1,2026-01-13 06:00:00
+LI-00679,INV-00375,Tournament Entry,Tournament Entry charge,1,17.6,17.6,2026-01-13 06:00:00
+LI-00680,INV-00376,Tournament Entry,Tournament Entry charge,1,25.19,25.19,2026-10-04 06:00:00
+LI-00681,INV-00376,Court Fee,Court Fee charge,2,11.56,23.12,2026-10-04 06:00:00
+LI-00682,INV-00377,Membership,Membership charge,1,74.9,74.9,2026-06-10 06:00:00
+LI-00683,INV-00378,Tournament Entry,Tournament Entry charge,1,23.84,23.84,2026-06-27 06:00:00
+LI-00684,INV-00378,Lesson,Lesson charge,1,43.14,43.14,2026-06-27 06:00:00
+LI-00685,INV-00378,Court Fee,Court Fee charge,2,23.33,46.66,2026-06-27 06:00:00
+LI-00686,INV-00379,Membership,Membership charge,1,46.27,46.27,2026-01-01 06:00:00
+LI-00687,INV-00379,Court Fee,Court Fee charge,2,13.42,26.84,2026-01-01 06:00:00
+LI-00688,INV-00379,Tournament Entry,Tournament Entry charge,1,27.69,27.69,2026-01-01 06:00:00
+LI-00689,INV-00380,Tournament Entry,Tournament Entry charge,1,16.66,16.66,2026-09-13 06:00:00
+LI-00690,INV-00380,Lesson,Lesson charge,1,89.17,89.17,2026-09-13 06:00:00
+LI-00691,INV-00381,Tournament Entry,Tournament Entry charge,1,27.51,27.51,2026-07-18 06:00:00
+LI-00692,INV-00382,Lesson,Lesson charge,1,38.04,38.04,2026-06-04 06:00:00
+LI-00693,INV-00382,Tournament Entry,Tournament Entry charge,1,21.76,21.76,2026-06-04 06:00:00
+LI-00694,INV-00383,Court Fee,Court Fee charge,2,13.99,27.98,2026-03-16 06:00:00
+LI-00695,INV-00383,Tournament Entry,Tournament Entry charge,1,15.87,15.87,2026-03-16 06:00:00
+LI-00696,INV-00384,Membership,Membership charge,1,110.92,110.92,2026-02-09 06:00:00
+LI-00697,INV-00384,Tournament Entry,Tournament Entry charge,1,22.83,22.83,2026-02-09 06:00:00
+LI-00698,INV-00385,Tournament Entry,Tournament Entry charge,1,22.33,22.33,2026-04-10 06:00:00
+LI-00699,INV-00385,Membership,Membership charge,1,106.34,106.34,2026-04-10 06:00:00
+LI-00700,INV-00386,Membership,Membership charge,1,100.86,100.86,2026-10-16 06:00:00
+LI-00701,INV-00386,Lesson,Lesson charge,1,46.1,46.1,2026-10-16 06:00:00
+LI-00702,INV-00386,Court Fee,Court Fee charge,2,10.91,21.82,2026-10-16 06:00:00
+LI-00703,INV-00387,Tournament Entry,Tournament Entry charge,1,15.05,15.05,2026-02-13 06:00:00
+LI-00704,INV-00388,Tournament Entry,Tournament Entry charge,1,17.0,17.0,2026-01-07 06:00:00
+LI-00705,INV-00388,Lesson,Lesson charge,1,66.47,66.47,2026-01-07 06:00:00
+LI-00706,INV-00388,Membership,Membership charge,1,75.6,75.6,2026-01-07 06:00:00
+LI-00707,INV-00389,Tournament Entry,Tournament Entry charge,1,25.21,25.21,2026-09-09 06:00:00
+LI-00708,INV-00389,Lesson,Lesson charge,1,37.4,37.4,2026-09-09 06:00:00
+LI-00709,INV-00390,Lesson,Lesson charge,1,55.0,55.0,2025-12-23 06:00:00
+LI-00710,INV-00391,Lesson,Lesson charge,1,44.92,44.92,2026-01-03 06:00:00
+LI-00711,INV-00391,Membership,Membership charge,1,76.48,76.48,2026-01-03 06:00:00
+LI-00712,INV-00392,Tournament Entry,Tournament Entry charge,1,23.13,23.13,2025-11-05 06:00:00
+LI-00713,INV-00392,Court Fee,Court Fee charge,2,10.49,20.98,2025-11-05 06:00:00
+LI-00714,INV-00393,Court Fee,Court Fee charge,2,22.38,44.76,2026-09-22 06:00:00
+LI-00715,INV-00394,Membership,Membership charge,1,105.87,105.87,2026-08-26 06:00:00
+LI-00716,INV-00394,Tournament Entry,Tournament Entry charge,1,25.54,25.54,2026-08-26 06:00:00
+LI-00717,INV-00395,Membership,Membership charge,1,68.14,68.14,2026-09-08 06:00:00
+LI-00718,INV-00395,Court Fee,Court Fee charge,2,22.44,44.88,2026-09-08 06:00:00
+LI-00719,INV-00396,Membership,Membership charge,1,82.04,82.04,2026-10-09 06:00:00
+LI-00720,INV-00396,Tournament Entry,Tournament Entry charge,1,18.63,18.63,2026-10-09 06:00:00
+LI-00721,INV-00396,Court Fee,Court Fee charge,2,18.86,37.72,2026-10-09 06:00:00
+LI-00722,INV-00397,Tournament Entry,Tournament Entry charge,1,25.87,25.87,2025-11-25 06:00:00
+LI-00723,INV-00397,Court Fee,Court Fee charge,2,12.68,25.36,2025-11-25 06:00:00
+LI-00724,INV-00398,Court Fee,Court Fee charge,2,24.2,48.4,2026-07-12 06:00:00
+LI-00725,INV-00399,Lesson,Lesson charge,1,68.26,68.26,2026-09-25 06:00:00
+LI-00726,INV-00399,Tournament Entry,Tournament Entry charge,1,22.42,22.42,2026-09-25 06:00:00
+LI-00727,INV-00399,Court Fee,Court Fee charge,2,13.08,26.16,2026-09-25 06:00:00
+LI-00728,INV-00400,Tournament Entry,Tournament Entry charge,1,29.26,29.26,2026-07-05 06:00:00
+LI-00729,INV-00400,Membership,Membership charge,1,85.78,85.78,2026-07-05 06:00:00
+LI-00730,INV-00401,Lesson,Lesson charge,1,89.52,89.52,2026-05-07 06:00:00
+LI-00731,INV-00401,Court Fee,Court Fee charge,2,20.3,40.6,2026-05-07 06:00:00
+LI-00732,INV-00401,Membership,Membership charge,1,43.4,43.4,2026-05-07 06:00:00
+LI-00733,INV-00402,Tournament Entry,Tournament Entry charge,1,29.73,29.73,2026-01-29 06:00:00
+LI-00734,INV-00403,Tournament Entry,Tournament Entry charge,1,18.2,18.2,2026-03-27 06:00:00
+LI-00735,INV-00404,Lesson,Lesson charge,1,74.05,74.05,2026-03-20 06:00:00
+LI-00736,INV-00404,Tournament Entry,Tournament Entry charge,1,29.87,29.87,2026-03-20 06:00:00
+LI-00737,INV-00405,Membership,Membership charge,1,43.5,43.5,2025-12-30 06:00:00
+LI-00738,INV-00405,Lesson,Lesson charge,1,78.55,78.55,2025-12-30 06:00:00
+LI-00739,INV-00406,Tournament Entry,Tournament Entry charge,1,22.23,22.23,2026-03-19 06:00:00
+LI-00740,INV-00406,Lesson,Lesson charge,1,52.6,52.6,2026-03-19 06:00:00
+LI-00741,INV-00407,Tournament Entry,Tournament Entry charge,1,24.11,24.11,2026-09-16 06:00:00
+LI-00742,INV-00407,Lesson,Lesson charge,1,37.82,37.82,2026-09-16 06:00:00
+LI-00743,INV-00407,Court Fee,Court Fee charge,2,17.53,35.06,2026-09-16 06:00:00
+LI-00744,INV-00408,Court Fee,Court Fee charge,2,16.26,32.52,2025-12-30 06:00:00
+LI-00745,INV-00408,Tournament Entry,Tournament Entry charge,1,19.43,19.43,2025-12-30 06:00:00
+LI-00746,INV-00409,Tournament Entry,Tournament Entry charge,1,15.68,15.68,2025-12-05 06:00:00
+LI-00747,INV-00409,Court Fee,Court Fee charge,2,10.27,20.54,2025-12-05 06:00:00
+LI-00748,INV-00410,Court Fee,Court Fee charge,2,11.09,22.18,2026-06-05 06:00:00
+LI-00749,INV-00410,Lesson,Lesson charge,1,76.83,76.83,2026-06-05 06:00:00
+LI-00750,INV-00411,Court Fee,Court Fee charge,2,18.43,36.86,2026-03-06 06:00:00
+LI-00751,INV-00411,Membership,Membership charge,1,42.93,42.93,2026-03-06 06:00:00
+LI-00752,INV-00412,Lesson,Lesson charge,1,50.71,50.71,2026-01-10 06:00:00
+LI-00753,INV-00412,Court Fee,Court Fee charge,2,17.61,35.22,2026-01-10 06:00:00
+LI-00754,INV-00413,Membership,Membership charge,1,118.69,118.69,2026-09-11 06:00:00
+LI-00755,INV-00413,Lesson,Lesson charge,1,38.97,38.97,2026-09-11 06:00:00
+LI-00756,INV-00414,Membership,Membership charge,1,47.49,47.49,2026-05-05 06:00:00
+LI-00757,INV-00414,Court Fee,Court Fee charge,2,24.36,48.72,2026-05-05 06:00:00
+LI-00758,INV-00415,Tournament Entry,Tournament Entry charge,1,23.96,23.96,2025-11-13 06:00:00
+LI-00759,INV-00416,Court Fee,Court Fee charge,2,22.35,44.7,2026-10-05 06:00:00
+LI-00760,INV-00417,Lesson,Lesson charge,1,78.76,78.76,2026-10-11 06:00:00
+LI-00761,INV-00417,Tournament Entry,Tournament Entry charge,1,15.83,15.83,2026-10-11 06:00:00
+LI-00762,INV-00418,Court Fee,Court Fee charge,2,24.39,48.78,2026-03-10 06:00:00
+LI-00763,INV-00418,Membership,Membership charge,1,92.84,92.84,2026-03-10 06:00:00
+LI-00764,INV-00419,Court Fee,Court Fee charge,2,14.19,28.38,2025-11-22 06:00:00
+LI-00765,INV-00419,Lesson,Lesson charge,1,84.78,84.78,2025-11-22 06:00:00
+LI-00766,INV-00420,Tournament Entry,Tournament Entry charge,1,22.52,22.52,2026-07-05 06:00:00
+LI-00767,INV-00420,Membership,Membership charge,1,59.79,59.79,2026-07-05 06:00:00
+LI-00768,INV-00421,Court Fee,Court Fee charge,2,12.7,25.4,2026-02-21 06:00:00
+LI-00769,INV-00422,Court Fee,Court Fee charge,2,20.23,40.46,2026-10-04 06:00:00
+LI-00770,INV-00422,Tournament Entry,Tournament Entry charge,1,25.07,25.07,2026-10-04 06:00:00
+LI-00771,INV-00423,Membership,Membership charge,1,97.47,97.47,2026-06-22 06:00:00
+LI-00772,INV-00424,Lesson,Lesson charge,1,41.02,41.02,2026-10-30 06:00:00
+LI-00773,INV-00425,Lesson,Lesson charge,1,42.56,42.56,2026-09-03 06:00:00
+LI-00774,INV-00425,Membership,Membership charge,1,95.68,95.68,2026-09-03 06:00:00
+LI-00775,INV-00426,Membership,Membership charge,1,105.7,105.7,2026-01-16 06:00:00
+LI-00776,INV-00426,Tournament Entry,Tournament Entry charge,1,24.09,24.09,2026-01-16 06:00:00
+LI-00777,INV-00427,Lesson,Lesson charge,1,49.83,49.83,2026-02-27 06:00:00
+LI-00778,INV-00427,Court Fee,Court Fee charge,2,21.03,42.06,2026-02-27 06:00:00
+LI-00779,INV-00428,Court Fee,Court Fee charge,2,12.2,24.4,2026-03-26 06:00:00
+LI-00780,INV-00428,Tournament Entry,Tournament Entry charge,1,23.43,23.43,2026-03-26 06:00:00
+LI-00781,INV-00429,Tournament Entry,Tournament Entry charge,1,25.1,25.1,2026-02-27 06:00:00
+LI-00782,INV-00430,Tournament Entry,Tournament Entry charge,1,23.12,23.12,2026-10-20 06:00:00
+LI-00783,INV-00431,Tournament Entry,Tournament Entry charge,1,19.95,19.95,2026-02-27 06:00:00
+LI-00784,INV-00432,Tournament Entry,Tournament Entry charge,1,27.59,27.59,2026-01-14 06:00:00
+LI-00785,INV-00432,Court Fee,Court Fee charge,2,10.52,21.04,2026-01-14 06:00:00
+LI-00786,INV-00432,Lesson,Lesson charge,1,61.27,61.27,2026-01-14 06:00:00
+LI-00787,INV-00433,Court Fee,Court Fee charge,2,21.84,43.68,2025-12-18 06:00:00
+LI-00788,INV-00434,Lesson,Lesson charge,1,41.73,41.73,2026-02-27 06:00:00
+LI-00789,INV-00434,Membership,Membership charge,1,66.82,66.82,2026-02-27 06:00:00
+LI-00790,INV-00435,Lesson,Lesson charge,1,39.57,39.57,2026-04-06 06:00:00
+LI-00791,INV-00436,Court Fee,Court Fee charge,2,10.48,20.96,2026-06-14 06:00:00
+LI-00792,INV-00437,Membership,Membership charge,1,83.12,83.12,2026-02-25 06:00:00
+LI-00793,INV-00437,Court Fee,Court Fee charge,2,19.44,38.88,2026-02-25 06:00:00
+LI-00794,INV-00438,Membership,Membership charge,1,89.8,89.8,2026-10-23 06:00:00
+LI-00795,INV-00438,Lesson,Lesson charge,1,57.72,57.72,2026-10-23 06:00:00
+LI-00796,INV-00439,Tournament Entry,Tournament Entry charge,1,23.41,23.41,2026-08-06 06:00:00
+LI-00797,INV-00439,Court Fee,Court Fee charge,2,11.48,22.96,2026-08-06 06:00:00
+LI-00798,INV-00439,Lesson,Lesson charge,1,44.3,44.3,2026-08-06 06:00:00
+LI-00799,INV-00440,Lesson,Lesson charge,1,67.0,67.0,2026-04-19 06:00:00
