@@ -1,0 +1,23 @@
+# Lives in the repo root, not ~/.dbt/, on purpose: clone, point dbt at this
+# file (see README "Setup"), and there's nothing to download from a platform
+# and nothing secret to manage. DuckDB has no credentials to protect.
+#
+# One physical file (topspin.duckdb), three schemas — see
+# macros/generate_schema_name.sql for how a target name becomes a schema
+# prefix. That macro is what makes dev/ci/prod three *real*, isolated
+# environments instead of three names for the same tables.
+topspin_tennis_academy:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: topspin.duckdb
+      schema: dev
+    ci:
+      type: duckdb
+      path: topspin.duckdb
+      schema: "ci_pr_{{ env_var('GITHUB_PR_NUMBER', 'local') }}"
+    prod:
+      type: duckdb
+      path: topspin.duckdb
+      schema: main
