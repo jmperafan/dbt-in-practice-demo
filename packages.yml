@@ -1,0 +1,7 @@
+packages:
+  # Only usable now that this project runs on Snowflake — see
+  # docs/02-ai-infrastructure.md (2.3). Built and validated by dbt Labs
+  # against Snowflake (Cortex), Databricks, BigQuery, and Redshift; not
+  # DuckDB, which is why this wasn't here before the Snowflake move.
+  - package: dbt-labs/dbt_context_engineering
+    version: 0.2.0
