@@ -111,8 +111,12 @@ def generate(seed, n_members, n_reservations, n_lessons):
             )[0],
             "city": rng.choice(CITIES),
             "is_active": rng.random() > 0.08,
-            "loaded_at": datetime.datetime.combine(
-                joined, datetime.time(hour=rng.randint(6, 20))
+            # A roster table's loaded_at is when the sync last ran, not when
+            # the member joined years ago — otherwise freshness checks would
+            # call a perfectly healthy roster stale forever.
+            "loaded_at": (
+                datetime.datetime.combine(today, datetime.time(12))
+                - datetime.timedelta(hours=rng.randint(1, 48))
             ).isoformat(sep=" "),
         })
 
@@ -141,8 +145,11 @@ def generate(seed, n_members, n_reservations, n_lessons):
             "certification_level": cert,
             "hourly_rate": rng.choice([45.00, 55.00, 65.00, 80.00, 95.00]),
             "is_active": rng.random() > 0.1,
-            "loaded_at": datetime.datetime.combine(
-                hire_date, datetime.time(hour=9)
+            # Same reasoning as members: loaded_at is the last sync, not
+            # when this coach was hired, possibly years ago.
+            "loaded_at": (
+                datetime.datetime.combine(today, datetime.time(12))
+                - datetime.timedelta(hours=rng.randint(1, 48))
             ).isoformat(sep=" "),
         })
 
@@ -251,7 +258,7 @@ def generate(seed, n_members, n_reservations, n_lessons):
             "entry_fee": rng.choice([15.00, 20.00, 25.00, 30.00]),
             "max_participants": rng.choice([16, 32]),
             "season_year": t_start.year,
-            "loaded_at": datetime.datetime.combine(t_start, datetime.time(9)).isoformat(sep=" "),
+            "loaded_at": (datetime.datetime.combine(today, datetime.time(12)) - datetime.timedelta(hours=rng.randint(1, 48))).isoformat(sep=" "),
         })
 
         participants = rng.sample(member_ids, k=min(16, len(member_ids)))
@@ -265,7 +272,7 @@ def generate(seed, n_members, n_reservations, n_lessons):
                 "seed": seed,
                 "entry_fee_paid": tournaments[-1]["entry_fee"],
                 "final_placement": placement,
-                "loaded_at": datetime.datetime.combine(t_start, datetime.time(9)).isoformat(sep=" "),
+                "loaded_at": (datetime.datetime.combine(today, datetime.time(12)) - datetime.timedelta(hours=rng.randint(1, 48))).isoformat(sep=" "),
             })
             entry_i += 1
 
@@ -285,7 +292,7 @@ def generate(seed, n_members, n_reservations, n_lessons):
                 "winner_member_id": winner,
                 "score": rng.choice(["6-4, 6-3", "7-5, 6-7, 6-2", "6-2, 6-2", "6-4, 4-6, 6-3"]),
                 "round_name": f"Round {r + 1}",
-                "loaded_at": datetime.datetime.combine(match_date, datetime.time(20)).isoformat(sep=" "),
+                "loaded_at": (datetime.datetime.combine(today, datetime.time(12)) - datetime.timedelta(hours=rng.randint(1, 48))).isoformat(sep=" "),
             })
             match_i += 1
 

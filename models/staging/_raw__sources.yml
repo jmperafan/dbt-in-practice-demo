@@ -1,0 +1,150 @@
+sources:
+  - name: raw
+    description: >
+      Raw data landed by scripts/load_raw_data.py, the ingestion step every
+      real dbt project assumes already happened before dbt ever runs. See
+      scripts/generate_demo_data.py for what's genuinely synthetic here and
+      which quirks are deliberate.
+    schema: raw
+    tables:
+      - name: members
+        description: Club membership roster.
+        columns:
+          - name: member_id
+            description: Unique membership id. Primary key of this table.
+            data_tests: [unique, not_null]
+          - name: email
+            description: Member's email address.
+            config: {meta: {pii: true}}
+          - name: phone
+            description: Member's phone number.
+            config: {meta: {pii: true}}
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 30, period: day}
+            error_after: {count: 90, period: day}
+
+      - name: coaches
+        description: Tennis coaches employed by the club.
+        columns:
+          - name: coach_id
+            description: Unique coach id. Primary key of this table.
+            data_tests: [unique, not_null]
+          - name: email
+            description: Coach's email address.
+            config: {meta: {pii: true}}
+          - name: phone
+            description: Coach's phone number.
+            config: {meta: {pii: true}}
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}
+
+      - name: court_reservations
+        description: >
+          Court booking activity. The busiest, highest-frequency source in
+          this project, and the only one with a genuinely tight freshness
+          SLA: a club actually needs to know same-day if bookings stopped
+          landing. Also where the mixed-timestamp and duplicate-row quirks
+          live, see 3.2 and the idempotent-loads discussion.
+        columns:
+          - name: reservation_id
+            description: Unique reservation id. Not a reliable primary key on its own, a handful of rows are deliberately duplicated end to end.
+          - name: member_id
+            description: Member who booked, when the booking is tied to a member at all. ~5% resolve to a GHOST- id that matches no real member.
+          - name: start_time
+            description: >
+              Start time of the reservation. Mixed format on purpose: most
+              rows are a bare "HH:MM" string, about 15% are a full
+              "YYYY-MM-DD HH:MM:SS" timestamp. stg_court_reservations
+              normalizes both to a single timestamp column.
+          - name: end_time
+            description: Same mixed-format problem as start_time.
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 1, period: day}
+            error_after: {count: 3, period: day}
+
+      - name: lessons
+        description: Individual and group coaching lessons booked by members.
+        columns:
+          - name: lesson_id
+            description: Unique lesson id. Primary key of this table.
+            data_tests: [unique, not_null]
+          - name: member_id
+            description: Member who booked the lesson. ~5% resolve to a GHOST- id.
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}
+
+      - name: tournaments
+        description: Club tournaments held each season.
+        columns:
+          - name: tournament_id
+            description: Unique tournament id. Primary key of this table.
+            data_tests: [unique, not_null]
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}
+
+      - name: tournament_entries
+        description: Member registrations for tournaments, including final placement.
+        columns:
+          - name: entry_id
+            description: Unique entry id. Primary key of this table.
+            data_tests: [unique, not_null]
+          - name: member_id
+            description: Member who registered. ~5% resolve to a GHOST- id.
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}
+
+      - name: matches
+        description: Individual matches played within tournaments.
+        columns:
+          - name: match_id
+            description: Unique match id. Primary key of this table.
+            data_tests: [unique, not_null]
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}
+
+      - name: invoices
+        description: Billing invoice headers issued to members.
+        columns:
+          - name: invoice_id
+            description: Unique invoice id. Primary key of this table.
+            data_tests: [unique, not_null]
+          - name: member_id
+            description: Member billed. ~5% resolve to a GHOST- id.
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}
+
+      - name: invoice_line_items
+        description: Individual line items belonging to invoices.
+        columns:
+          - name: line_item_id
+            description: Unique line-item id. Primary key of this table.
+            data_tests: [unique, not_null]
+          - name: invoice_id
+            description: Parent invoice the line item belongs to.
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}

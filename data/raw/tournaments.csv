@@ -1,9 +1,9 @@
 tournament_id,name,start_date,end_date,category,entry_fee,max_participants,season_year,loaded_at
-T-001,Spring Singles Open,2026-05-22,2026-05-25,Singles,20.0,32,2026,2026-05-22 09:00:00
-T-002,Summer Doubles Classic,2026-03-18,2026-03-20,Doubles,20.0,16,2026,2026-03-18 09:00:00
-T-003,Junior Invitational,2026-03-24,2026-03-27,Junior,25.0,32,2026,2026-03-24 09:00:00
-T-004,Mixed Doubles Cup,2025-11-10,2025-11-11,Mixed,15.0,32,2025,2025-11-10 09:00:00
-T-005,Veterans Championship,2026-06-12,2026-06-15,Veterans,30.0,32,2026,2026-06-12 09:00:00
-T-006,Fall Singles Open,2026-07-11,2026-07-13,Singles,30.0,32,2026,2026-07-11 09:00:00
-T-007,Club Doubles League,2025-11-19,2025-11-21,Doubles,30.0,16,2025,2025-11-19 09:00:00
-T-008,Winter Junior Series,2025-12-07,2025-12-10,Junior,30.0,32,2025,2025-12-07 09:00:00
+T-001,Spring Singles Open,2026-01-26,2026-01-27,Singles,15.0,32,2026,2026-10-31 23:00:00
+T-002,Summer Doubles Classic,2026-02-18,2026-02-20,Doubles,30.0,32,2026,2026-11-01 09:00:00
+T-003,Junior Invitational,2025-12-24,2025-12-25,Junior,30.0,16,2025,2026-10-31 06:00:00
+T-004,Mixed Doubles Cup,2026-01-15,2026-01-18,Mixed,15.0,32,2026,2026-11-01 02:00:00
+T-005,Veterans Championship,2026-06-24,2026-06-26,Veterans,30.0,32,2026,2026-10-31 11:00:00
+T-006,Fall Singles Open,2025-11-19,2025-11-22,Singles,25.0,16,2025,2026-10-30 17:00:00
+T-007,Club Doubles League,2026-01-02,2026-01-04,Doubles,20.0,32,2026,2026-10-31 13:00:00
+T-008,Winter Junior Series,2026-04-24,2026-04-27,Junior,30.0,16,2026,2026-10-31 14:00:00
