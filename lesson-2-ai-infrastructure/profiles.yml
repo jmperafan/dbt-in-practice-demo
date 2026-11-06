@@ -1,0 +1,50 @@
+# Lives in the repo root, not ~/.dbt/, so there's one obvious place to look
+# — see README "Setup". Snowflake does need real credentials, unlike a
+# local DuckDB file, but none of them live in this file: every secret below
+# is env_var()'d, so nothing sensitive ever sits in git history.
+#
+# Key-pair auth, not a password: Snowflake is deprecating password login for
+# individual users (MFA/SSO only going forward), and this is also what
+# ztc-core's own ingestion script already uses — see
+# scripts/load_raw_data.py's docstring for how to generate one.
+#
+# One account, three schemas — see macros/generate_schema_name.sql for how a
+# target name becomes a schema prefix. That macro is what makes dev/ci/prod
+# three *real*, isolated environments instead of three names for the same
+# tables.
+topspin_tennis_academy:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      private_key: "{{ env_var('SNOWFLAKE_PRIVATE_KEY') }}"
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE', 'TOPSPIN_TENNIS_ACADEMY') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      schema: dev
+      threads: 8
+    ci:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      private_key: "{{ env_var('SNOWFLAKE_PRIVATE_KEY') }}"
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE', 'TOPSPIN_TENNIS_ACADEMY') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      schema: "ci_pr_{{ env_var('GITHUB_PR_NUMBER', 'local') }}"
+      threads: 8
+    prod:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      private_key: "{{ env_var('SNOWFLAKE_PRIVATE_KEY') }}"
+      private_key_passphrase: "{{ env_var('SNOWFLAKE_PRIVATE_KEY_PASSPHRASE', '') }}"
+      role: "{{ env_var('SNOWFLAKE_ROLE', 'TRANSFORMER') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE', 'TOPSPIN_TENNIS_ACADEMY') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      schema: main
+      threads: 8

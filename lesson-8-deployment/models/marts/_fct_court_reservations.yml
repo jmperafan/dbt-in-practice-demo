@@ -1,0 +1,54 @@
+models:
+  - name: fct_court_reservations
+    description: >
+      One row per court reservation. Incremental: only reservations loaded
+      within the last 3 days (a lookback, not a strict "since last run",
+      to still catch a late-arriving or corrected load) get reprocessed,
+      not the whole table every time.
+    config:
+      tags: ["fact", "incremental"]
+      meta:
+        owner: analytics-engineering
+    columns:
+      - name: reservation_id
+        description: >
+          Not unique in stg_court_reservations — a handful of source rows
+          are deliberately duplicated end to end (Lesson 3's idempotent-
+          loads discussion) — but unique here: merge's unique_key alone
+          doesn't collapse those (it only decides update-vs-insert against
+          rows already in this table on a later run, not duplicates
+          landing in the same batch), so this model dedupes on this column
+          itself, keeping each id's most-recently-loaded copy, before the
+          merge ever runs. The unique test below is what actually proves
+          that dedupe keeps working, not just documentation.
+        data_tests: [unique, not_null]
+      - name: court_number
+        description: "{{ doc('court_number') }}"
+      - name: status
+        description: Confirmed, Cancelled, or Unconfirmed.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["Confirmed", "Cancelled", "Unconfirmed"]
+      - name: booking_type
+        description: Court Booking, Lesson, Tournament, Maintenance, or Closed.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["Court Booking", "Lesson", "Tournament", "Maintenance", "Closed"]
+      - name: member_id
+        description: "{{ doc('member_id') }}"
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_members')
+                field: member_id
+              config:
+                severity: warn
+                # warn, not error: the GHOST- rows this test genuinely
+                # catches (member_id's own doc block) are a known,
+                # accepted-for-now data-quality issue, not a broken build.
+                # Blocking dbt build on every run over something already
+                # understood would just train everyone to ignore the test
+                # entirely. Lesson 7's audit trail is where this actually
+                # gets acted on, not here.

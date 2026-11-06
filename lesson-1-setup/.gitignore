@@ -1,0 +1,22 @@
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Agent skills a package bundles and dbt deps installs (see
+# dbt_project.yml's flags.ai_provider comment) are generated, reproducible
+# output, the same reasoning as dbt_packages/ itself — regenerate with
+# `dbt deps` after cloning, don't commit them.
+.claude/skills/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+dbt_internal_packages/
+
+# dbt's per-machine anonymous usage ID, not project state
+.user.yml

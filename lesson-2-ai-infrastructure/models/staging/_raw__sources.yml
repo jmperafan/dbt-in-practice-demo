@@ -1,0 +1,30 @@
+sources:
+  - name: raw
+    description: >
+      Raw data landed by scripts/load_raw_data.py, the ingestion step every
+      real dbt project assumes already happened before dbt ever runs. See
+      scripts/generate_demo_data.py for what's genuinely synthetic here and
+      which quirks are deliberate.
+    schema: raw
+    tables:
+      - name: member_feedback
+        description: >
+          Free-text member feedback comments, not a structured metric. The
+          one unstructured source in this project, used in Lesson 2 for
+          dbt_context_engineering's chunk/embed/search pattern. The other
+          nine raw tables arrive in Lesson 3, which is where this project's
+          sources are taught properly — this one exists early specifically
+          because the context-engineering demo needs real text to point at.
+        columns:
+          - name: feedback_id
+            description: Unique feedback id. Primary key of this table.
+            data_tests: [unique, not_null]
+          - name: member_id
+            description: Member who left the feedback. ~3% resolve to a GHOST- id.
+          - name: comment_text
+            description: The free-text comment itself. What gets chunked and embedded.
+        config:
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 90, period: day}
+            error_after: {count: 365, period: day}

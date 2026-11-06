@@ -1,0 +1,23 @@
+models:
+  - name: fct_court_reservations
+    description: >
+      One row per court reservation. Incremental: only reservations whose
+      loaded_at is newer than the last run get processed, not the whole
+      table every time.
+    config:
+      tags: ["fact", "incremental"]
+      meta:
+        owner: analytics-engineering
+    columns:
+      - name: reservation_id
+        description: >
+          Not unique on its own — see stg_court_reservations: a handful of
+          rows are deliberately duplicated end to end (Lesson 3's
+          idempotent-loads discussion). merge on this column is what keeps
+          a rerun from doubling them here, which is why this column's own
+          test is not_null only, not unique.
+        data_tests: [not_null]
+      - name: court_number
+        description: "{{ doc('court_number') }}"
+      - name: member_id
+        description: "{{ doc('member_id') }}"

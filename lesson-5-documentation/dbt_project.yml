@@ -1,0 +1,86 @@
+name: 'topspin_tennis_academy'
+profile: 'topspin_tennis_academy'
+version: '1.0.0'
+
+# This project targets dbt v2 (the Fusion engine, GA since 2026-09-16). It
+# relies on v2-only features later in the course (project Checks, the dbt
+# Information Schema), so the floor below is a hard requirement, not a
+# polite preference. See ../lesson-1-setup/README.md for why v2 over v1.
+require-dbt-version: ">=2.0.0,<3.0.0"
+
+# Binds this repo to a project on the dbt platform, the same dual-binding
+# ztc-core uses: the Fusion engine binary still resolves credentials from
+# profiles.yml for day-to-day runs (see profiles.yml's own header), but this
+# block is what the dbt platform CLI, dbt Jobs, Wizard-on-platform, and
+# Mesh/Catalog all key off instead. Replace with your own project's ID —
+# this one is a placeholder until the sandbox described in ../lesson-1-setup/README.md
+# exists.
+# dbt-cloud:
+#   project-id: REPLACE_ME
+
+# dbt_context_engineering's embed() is disabled by default on purpose — a
+# fresh or CI target should never accidentally trigger a real, billed AI
+# call just by running `dbt build`. ai_functions_enabled is compared as a
+# literal "true"/"false" string by the package (not Jinja truthiness, see
+# its own require_ai_functions_enabled macro), so it's set plainly here,
+# not with a per-target conditional. embedding_model needs a real Cortex
+# embedding model name available in your Snowflake account/region — fill
+# in once the sandbox exists; left as a placeholder, the package itself
+# raises a clear error naming exactly this, rather than failing opaquely.
+vars:
+  ai_functions_enabled: true
+  embedding_model: "REPLACE_ME"   # e.g. a Cortex embedding model your account has enabled
+
+model-paths: ["models"]
+test-paths: ["tests"]
+check-paths: ["checks"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  topspin_tennis_academy:
+    # staging: private — the layer every downstream model is built from, not
+    # something another project (or a BI tool) should ever reference directly.
+    staging:
+      +materialized: view
+      +schema: staging
+      +tags: ["staging"]
+
+    # intermediate: private — shared join/business logic, implementation
+    # detail. Ephemeral because nothing outside this project ever queries it.
+    intermediate:
+      +materialized: ephemeral
+      +schema: intermediate
+      +tags: ["intermediate"]
+
+    # marts: the consumption-ready layer. Built out starting in Lesson 4.
+    marts:
+      +materialized: table
+      +schema: marts
+      +tags: ["marts"]
+
+    # context: what an AI agent reads, not what a person reads — a
+    # different kind of consumer than staging/intermediate/marts, so it's
+    # its own layer rather than forced into "marts". Tables, not ephemeral:
+    # an embedding is meant to be queried repeatedly, not recomputed inline
+    # every time something refs it. See ../lesson-2-ai-infrastructure/README.md (2.3).
+    context:
+      +materialized: table
+      +schema: context
+      +tags: ["context", "ai"]
+
+# dbt v2 auto-discovers agent skills bundled inside installed packages —
+# dbt_context_engineering ships three (dbt-ce-setup, dbt-ce-ai-functions,
+# dbt-ce-pipeline) — but only installs them once it knows which coding
+# agent's format to install them in. This is a separate mechanism from the
+# marketplace-install pattern in ../lesson-2-ai-infrastructure/README.md (2.4): that
+# one is a team explicitly adding a skills repo; this is a package quietly
+# carrying its own skills along for the ride, which is worth noticing
+# precisely because it's easy to miss (dbt only warns, it doesn't fail).
+flags:
+  ai_provider: claude

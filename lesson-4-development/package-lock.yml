@@ -1,0 +1,11 @@
+packages:
+- package: dbt-labs/codegen
+  name: codegen
+  version: 0.14.1
+- package: dbt-labs/dbt_context_engineering
+  name: dbt_context_engineering
+  version: 0.2.0
+- package: dbt-labs/dbt_utils
+  name: dbt_utils
+  version: 1.4.1
+sha1_hash: b1e449be6b46e1e740e6ba58ea408ec633ab17f8

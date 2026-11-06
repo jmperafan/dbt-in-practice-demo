@@ -1,0 +1,24 @@
+models:
+  - name: int_member_feedback_embeddings
+    description: >
+      Member feedback comments turned into vectors an agent can search by
+      meaning. Incremental and version-aware (the package's ADR-0004
+      pattern, via content_hash + embedding_fn_fingerprint +
+      incremental_delta_predicate): a routine run only (re-)embeds a
+      comment whose text actually changed, and changing embedding_model
+      re-embeds the whole corpus, never a silent mix of old and new
+      vectors. A cost guard (guard_batch) and the package's own
+      ai_run_log audit trail (log_ai_run/complete_ai_run) are wired to
+      that same delta. full_refresh is gated behind
+      var('allow_full_reembed', false), so an unrelated --full-refresh on
+      a shared job can't silently re-bill the whole corpus — pass
+      --vars '{allow_full_reembed: true}' to force one on purpose.
+    columns:
+      - name: feedback_id
+        data_tests: [unique, not_null]
+      - name: content_hash
+        description: SHA-256 of comment_text at embed time — the "did this comment's text change" half of the incremental cache key.
+      - name: model_version
+        description: Compile-time fingerprint of the embedding_model/dimension this row's vector was embedded with — the "did the model change" half of the cache key, and what triggers a full re-embed when it does.
+      - name: embedding
+        description: The vector itself, searchable by cosine similarity via dbt_context_engineering.vector_search().

@@ -1,0 +1,13 @@
+models:
+  - name: dim_members
+    description: One row per member, the consumption-ready member dimension.
+    config:
+      tags: ["dimension"]
+      meta:
+        owner: membership-team
+    columns:
+      - name: member_id
+        description: "{{ doc('member_id') }}"
+        data_tests: [unique, not_null]
+      - name: membership_tier
+        description: Junior, Adult, Family, or Senior — the plan this member is actually billed on.

@@ -1,0 +1,14 @@
+models:
+  - name: int_member_feedback_embeddings
+    description: >
+      Member feedback comments turned into vectors an agent can search by
+      meaning. The simple, "get started" form of dbt_context_engineering's
+      embed() macro: not yet incremental, not yet pinned to a specific
+      embedding_model config, not yet re-embedding only what changed. See
+      the package's ADR-0004 (version-aware incremental refresh) before
+      using this pattern on anything that isn't a demo.
+    columns:
+      - name: feedback_id
+        data_tests: [unique, not_null]
+      - name: embedding
+        description: The vector itself, searchable by cosine similarity via dbt_context_engineering.vector_search().

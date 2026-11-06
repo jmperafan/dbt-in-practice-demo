@@ -1,0 +1,17 @@
+unit_tests:
+  - name: test_stg_court_reservations_normalizes_mixed_timestamps
+    description: >
+      Correctness of the mixed-timestamp logic itself (Lesson 3.2), not the
+      data: a bare "HH:MM" string and a full "YYYY-MM-DD HH:MM:SS" string
+      must both normalize to the same real timestamp, against fixtures,
+      before this model is ever materialized against real rows.
+    model: stg_court_reservations
+    given:
+      - input: source('raw', 'court_reservations')
+        rows:
+          - {reservation_id: 'RES-TEST-1', court_number: 1, member_id: 'M-0001', reservation_date: '2026-01-15', start_time: '14:00', end_time: '15:00', duration_hours: 1.0, booking_type: 'Court Booking', status: 'Confirmed', booking_source: 'App', created_at: '2026-01-14 10:00:00', loaded_at: '2026-01-14 10:05:00'}
+          - {reservation_id: 'RES-TEST-2', court_number: 2, member_id: 'M-0002', reservation_date: '2026-01-16', start_time: '2026-01-16 09:00:00', end_time: '2026-01-16 10:00:00', duration_hours: 1.0, booking_type: 'Court Booking', status: 'Confirmed', booking_source: 'Admin', created_at: '2026-01-15 10:00:00', loaded_at: '2026-01-15 10:05:00'}
+    expect:
+      rows:
+        - {reservation_id: 'RES-TEST-1', reservation_start_at: '2026-01-15 14:00:00', reservation_end_at: '2026-01-15 15:00:00'}
+        - {reservation_id: 'RES-TEST-2', reservation_start_at: '2026-01-16 09:00:00', reservation_end_at: '2026-01-16 10:00:00'}
