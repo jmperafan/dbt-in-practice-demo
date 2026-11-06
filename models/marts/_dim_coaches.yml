@@ -1,0 +1,12 @@
+models:
+  - name: dim_coaches
+    description: One row per coach.
+    config:
+      tags: ["dimension"]
+      meta:
+        owner: coaching-team
+    columns:
+      - name: coach_id
+        data_tests: [unique, not_null]
+      - name: hourly_rate
+        description: What this coach is paid per hour of lesson time, not what a member is charged (see fct_court_activity for lesson pricing).

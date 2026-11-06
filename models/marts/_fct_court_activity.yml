@@ -1,0 +1,57 @@
+models:
+  - name: fct_court_activity
+    description: >
+      Every court-reservation, lesson, and match in one shape (see
+      int_court_activity), for "how busy was court N" questions that
+      shouldn't have to union three fact tables themselves.
+    config:
+      tags: ["fact"]
+      meta:
+        owner: analytics-engineering
+
+    # Semantic Layer config (dbt v2 / 1.12+ shape): embedded in this same
+    # properties file, entities and dimensions annotated at the column
+    # level below, not a separate top-level semantic_models: block — that
+    # shape is deprecated (confirmed live: dbt parse warns
+    # SemanticModelDeprecated on the old syntax). Defined once here so
+    # every BI tool or agent querying it gets the same number for "court
+    # hours used" — the point of 5.5: documenting for a machine reader is
+    # a different job than documenting for a person reading this file.
+    semantic_model:
+      enabled: true
+      name: court_activity
+    agg_time_dimension: activity_date
+
+    columns:
+      - name: court_activity_id
+        description: Surrogate key (dbt_utils.generate_surrogate_key), since no single source column is unique across all three activity types.
+        data_tests: [unique, not_null]
+        entity:
+          type: primary
+          name: court_activity
+
+      - name: activity_date
+        description: The calendar date of the activity. This model's time dimension for the Semantic Layer.
+        dimension:
+          type: time
+
+      - name: activity_type
+        description: "Court Booking, Lesson, or Match — which of the three source tables this row came from."
+        dimension:
+          type: categorical
+
+      - name: court_number
+        description: "{{ doc('court_number') }}"
+        dimension:
+          type: categorical
+
+      - name: duration_hours
+        description: Hours of activity this row represents. The input to the court_hours_used metric below.
+
+    metrics:
+      - name: court_hours_used
+        label: "Court Hours Used"
+        description: Total hours courts were booked for any activity type.
+        type: simple
+        agg: sum
+        expr: duration_hours

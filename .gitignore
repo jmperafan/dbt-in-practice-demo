@@ -11,6 +11,7 @@ logs/
 # generated output, so they're un-ignored individually below.
 .claude/skills/*
 !.claude/skills/generate-staging-model/
+!.claude/skills/draft-column-descriptions/
 
 # Python
 __pycache__/
