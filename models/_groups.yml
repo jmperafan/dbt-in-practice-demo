@@ -1,0 +1,11 @@
+groups:
+  # This whole project is one team's DAG end to end — per dbt Labs' own
+  # mesh-fit guidance (not model count), that's a single-team monolith,
+  # where mesh "may not be required" regardless of how many models exist.
+  # One group, not a group per domain, is the honest reflection of that:
+  # see docs/07-governance.md (7.7) for the actual framework and why this
+  # project doesn't split further.
+  - name: analytics_engineering
+    owner:
+      name: Analytics Engineering
+      email: analytics@topspin.example

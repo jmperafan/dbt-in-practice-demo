@@ -2,12 +2,48 @@ models:
   - name: dim_members
     description: One row per member, the consumption-ready member dimension.
     config:
-      tags: ["dimension"]
+      tags: ["dimension", "certified"]
       meta:
         owner: membership-team
+        # Model certification (7.6): not a native dbt feature, a
+        # convention backed by an enforced bar. This tag alone proves
+        # nothing on its own — checks/certified_models_meet_the_bar.sql
+        # (Lesson 8) is what actually verifies owner + contract + tests +
+        # docs before anything can claim this tag truthfully.
+        certified: true
+      # Model contracts (7.2): every column's name and data_type below is
+      # now a promise, not just documentation — a change that doesn't
+      # match fails the build instead of silently reaching whoever's
+      # already querying this table.
+      contract:
+        enforced: true
     columns:
       - name: member_id
         description: "{{ doc('member_id') }}"
+        data_type: text
         data_tests: [unique, not_null]
+      - name: first_name
+        data_type: text
+      - name: last_name
+        data_type: text
+      - name: email
+        data_type: text
+        config:
+          meta: {pii: true}
+      - name: phone
+        data_type: text
+        config:
+          meta: {pii: true}
+      - name: date_of_birth
+        data_type: date
+        config:
+          meta: {pii: true}
+      - name: join_date
+        data_type: date
       - name: membership_tier
         description: Junior, Adult, Family, or Senior — the plan this member is actually billed on.
+        data_type: text
+      - name: city
+        data_type: text
+      - name: is_active
+        data_type: boolean

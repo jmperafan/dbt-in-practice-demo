@@ -59,10 +59,16 @@ models:
       +tags: ["intermediate"]
 
     # marts: the consumption-ready layer. Built out starting in Lesson 4.
+    # +group (Lesson 7.7): one group for the whole layer, not one per
+    # domain — this project is a single team's DAG end to end, and dbt
+    # Labs' own mesh-fit guidance is organizational structure, not model
+    # count. Splitting further here would be overhead with no real team
+    # boundary behind it. See models/_groups.yml and docs/07-governance.md.
     marts:
       +materialized: table
       +schema: marts
       +tags: ["marts"]
+      +group: analytics_engineering
 
     # context: what an AI agent reads, not what a person reads — a
     # different kind of consumer than staging/intermediate/marts, so it's
