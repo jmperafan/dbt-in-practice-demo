@@ -44,6 +44,14 @@ git checkout lesson-4-start
 `main` always points at the most recently finished lesson — right now,
 that's wherever this build has gotten to.
 
+## Cheatsheets
+
+[`cheatsheets/`](cheatsheets/) has one quick-reference PDF per lesson
+(`cheatsheet-01-setup.pdf` through `cheatsheet-08-deployment.pdf`), plus
+[`dbt-in-practice-cheatsheets.pdf`](cheatsheets/dbt-in-practice-cheatsheets.pdf),
+all eight combined. Each is commands and config to have open while you
+work through that lesson, not a substitute for `docs/`'s explanations.
+
 ## Setup
 
 This project runs on Snowflake plus the dbt platform — see
