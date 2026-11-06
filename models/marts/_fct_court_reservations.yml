@@ -19,5 +19,31 @@ models:
         data_tests: [not_null]
       - name: court_number
         description: "{{ doc('court_number') }}"
+      - name: status
+        description: Confirmed, Cancelled, or Unconfirmed.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["Confirmed", "Cancelled", "Unconfirmed"]
+      - name: booking_type
+        description: Court Booking, Lesson, Tournament, Maintenance, or Closed.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["Court Booking", "Lesson", "Tournament", "Maintenance", "Closed"]
       - name: member_id
         description: "{{ doc('member_id') }}"
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_members')
+                field: member_id
+              config:
+                severity: warn
+                # warn, not error: the GHOST- rows this test genuinely
+                # catches (member_id's own doc block) are a known,
+                # accepted-for-now data-quality issue, not a broken build.
+                # Blocking dbt build on every run over something already
+                # understood would just train everyone to ignore the test
+                # entirely. Lesson 7's audit trail is where this actually
+                # gets acted on, not here.

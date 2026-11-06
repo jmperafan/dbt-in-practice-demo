@@ -47,6 +47,17 @@ models:
 
       - name: duration_hours
         description: Hours of activity this row represents. The input to the court_hours_used metric below.
+        data_tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              arguments:
+                min_value: 0
+                max_value: 24
+              # Wider than any single real booking needs to be — this is
+              # a sanity bound (nothing on one court in one day), not a
+              # tight business rule. assert_no_negative_duration_hours
+              # (a singular test) already covers the sharp edge at zero;
+              # this package test covers the other bound in one line
+              # instead of a second hand-written singular test.
 
     metrics:
       - name: court_hours_used
