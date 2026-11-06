@@ -69,6 +69,15 @@ models:
       +schema: marts
       +tags: ["marts"]
       +group: analytics_engineering
+      # dbt State (8.5): this demo's data doesn't change between
+      # recordings the way a live production feed would — not ztc-core's
+      # fully closed 2022-2023 dataset, but close enough that the default
+      # 45-minute lag_tolerance buys nothing here except rebuilds
+      # triggered by nothing more than the clock advancing. 24h is a
+      # middle ground: still real tolerance, not pretending this is
+      # permanently static.
+      +state:
+        lag_tolerance: 24h
 
     # context: what an AI agent reads, not what a person reads — a
     # different kind of consumer than staging/intermediate/marts, so it's
@@ -90,3 +99,10 @@ models:
 # precisely because it's easy to miss (dbt only warns, it doesn't fail).
 flags:
   ai_provider: claude
+
+# dbt Checks (8.6) query this versioned metadata index, not the manifest
+# directly. 1 is currently the only version that exists; pinning it means
+# a future v2 release adding a v2 schema won't silently change what
+# checks/ is querying.
+info_schema:
+  version: 1

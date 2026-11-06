@@ -1,0 +1,18 @@
+version: 2
+checks:
+  - name: public_models_have_descriptions
+    description: Every model Lesson 7 or later marks public must have a real description.
+
+  - name: certified_models_meet_the_bar
+    description: >
+      A model tagged meta.certified: true must actually have an owner and
+      an enforced contract. A false claim here is a governance failure
+      worth blocking a build over, not a warning.
+
+  - name: unused_staging_and_intermediate_models
+    description: >
+      A staging or intermediate model with no downstream dbt model is
+      either not wired up yet or genuinely dead — worth a look, not
+      necessarily a broken build, since it could be either.
+    config:
+      severity: warn

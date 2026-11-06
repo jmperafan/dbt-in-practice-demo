@@ -1,0 +1,8 @@
+selectors:
+  - name: ci_slim
+    description: >
+      Only what a pull request actually touched, plus everything downstream
+      of it. Named here once so a local `dbt build` and the CI workflow
+      (`.github/workflows/dbt-ci.yml`) select the exact same thing instead
+      of two copies of the same selection string drifting apart over time.
+    definition: "state:modified+"
